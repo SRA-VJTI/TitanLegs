@@ -1,7 +1,7 @@
 # TABLE OF CONTENTS
 - [TitanLegs : Quadruped Actuator](#1)
   - [Gearbox](#2)
-
+- [Resources](#3)
 
 
 # Titan Legs <a name="1"></a>
@@ -19,4 +19,6 @@
   <img src="./assets/gearbox_v1.png" width="500"/>
 </p>
 
-
+# Resources <a name="3"></a>
+* [Cycloidal Drive in Solidworks](https://blogs.solidworks.com/teacher/wp-content/uploads/sites/3/Building-a-Cycloidal-Drive-with-SOLIDWORKS.pdf)
+* [Cycloidal gear drive : Design Principles](https://www.irjet.net/archives/V5/i4/IRJET-V5I4565.pdf)
