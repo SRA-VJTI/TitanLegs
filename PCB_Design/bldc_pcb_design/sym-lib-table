@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name DRV8305NPHPR)(type Legacy)(uri ${KIPRJMOD}/component_libraries/DRV8305NPHPR/KiCad/DRV8305NPHPR.lib)(options "")(descr ""))
+  (lib (name BSC022N04LS6ATMA1)(type Legacy)(uri ${KIPRJMOD}/component_libraries/MOSFETS/BSC022N04LS6ATMA1/KiCAD/BSC022N04LS6ATMA1.lib)(options "")(descr ""))
+)
