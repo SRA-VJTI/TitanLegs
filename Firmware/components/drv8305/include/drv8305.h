@@ -1,8 +1,13 @@
 #ifndef _DRV8305_H_
 #define _DRV8305_H_
 
-#include "sw/drivers/spi/src/32b/f28x/f2802x/spi.h"
-#include "sw/drivers/gpio/src/32b/f28x/f2802x/gpio.h"
+// #include "sw/drivers/spi/src/32b/f28x/f2802x/spi.h"
+// #include "sw/drivers/gpio/src/32b/f28x/f2802x/gpio.h"
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include "driver/gpio.h"
+#include "esp_log.h"
 
 
 #ifdef __cplusplus
@@ -1023,10 +1028,10 @@ typedef struct _DRV8305_Obj_
 {
   SPI_Handle       spiHandle;                  //!< the handle for the serial peripheral interface
   GPIO_Handle      gpioHandle;                 //!< the gpio handle that is connected to the drv8305 enable pin
-  GPIO_Number_e    gpioNumber;                 //!< the gpio number that is connected to the drv8305 enable pin
+  gpio_num_t    gpioNumber;                 //!< the gpio number that is connected to the drv8305 enable pin
 
 #ifdef CS_GPIO
-  GPIO_Number_e    gpioCS_Number;              //!< the gpio number that is connected to the drv8305 CS SPI pin
+  gpio_num_t    gpioCS_Number;              //!< the gpio number that is connected to the drv8305 CS SPI pin
 #endif
 
   bool             RxTimeOut;                  //!< the timeout flag for the RX fifo
@@ -1227,13 +1232,13 @@ void DRV8305_setGpioHandle(DRV8305_Handle handle,GPIO_Handle gpioHandle);
 //! \brief     Sets the GPIO number in the DRV8305
 //! \param[in] handle       The DRV8305 handle
 //! \param[in] gpioHandle   The GPIO number to use
-void DRV8305_setGpioNumber(DRV8305_Handle handle,GPIO_Number_e gpioNumber);
+void DRV8305_setGpioNumber(DRV8305_Handle handle,gpio_num_t gpioNumber);
 
 #ifdef CS_GPIO
 //! \brief     Sets the GPIO number in the DRV8305
 //! \param[in] handle       The DRV8305 handle
 //! \param[in] gpioHandle   The GPIO number to use
-void DRV8305_setSPI_CS_Number(DRV8305_Handle handle,GPIO_Number_e gpioCS_Number);
+void DRV8305_setSPI_CS_Number(DRV8305_Handle handle,gpio_num_t gpioCS_Number);
 #endif
 
 //! \brief     Sets the high side gate drive peak source current level

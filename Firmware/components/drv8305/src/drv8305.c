@@ -453,7 +453,7 @@ void DRV8305_setGpioHandle(DRV8305_Handle handle,GPIO_Handle gpioHandle)
 } // end of DRV8305_setGpioHandle() function
 
 
-void DRV8305_setGpioNumber(DRV8305_Handle handle,GPIO_Number_e gpioNumber)
+void DRV8305_setGpioNumber(DRV8305_Handle handle,gpio_num_t gpioNumber)
 {
   DRV8305_Obj *obj = (DRV8305_Obj *)handle;
 
@@ -464,7 +464,7 @@ void DRV8305_setGpioNumber(DRV8305_Handle handle,GPIO_Number_e gpioNumber)
 } // end of DRV8305_setGpioNumber() function
 
 #ifdef CS_GPIO
-void DRV8305_setSPI_CS_Number(DRV8305_Handle handle,GPIO_Number_e gpioCS_Number)
+void DRV8305_setSPI_CS_Number(DRV8305_Handle handle,gpio_num_t gpioCS_Number)
 {
   DRV8305_Obj *obj = (DRV8305_Obj *)handle;
 
