@@ -1,11 +1,11 @@
- #include "spi_interface.h"
- #include <stdio.h>
- #include <stdint.h>
- #include "driver/spi_common.h"
- #include "driver/spi_master.h"
- #include "esp_log.h"
- #include "esp_err.h"
- #include "sdkconfig.h"
+#include "spi_interface.h"
+#include <stdio.h>
+#include <stdint.h>
+#include "driver/spi_common.h"
+#include "driver/spi_master.h"
+#include "esp_log.h"
+#include "esp_err.h"
+#include "sdkconfig.h"
 #define HOST HSPI_HOST
 
 #if defined   CONFIG_SPIBUS_LOG_RW_LEVEL_INFO
@@ -36,6 +36,7 @@ esp_err_t begin(int mosi_io_num, int miso_io_num, int sclk_io_num, int max_trans
     config.quadwp_io_num = -1;  // -1 not used
     config.quadhd_io_num = -1;  // -1 not used
     config.max_transfer_sz = max_transfer_sz;
+    config.flags= SPICOMMON_BUSFLAG_NATIVE_PINS;
     return spi_bus_initialize(HOST, &config, 0);  // 0 DMA not used
 }
 
