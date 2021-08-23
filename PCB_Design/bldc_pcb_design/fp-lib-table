@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name BSC022N04LS6ATMA1)(type KiCad)(uri ${KIPRJMOD}/component_libraries/BSC022N04LS6ATMA1/BSC022N04LS6ATMA1.pretty)(options "")(descr ""))
   (lib (name DRV8305NPHPR)(type KiCad)(uri ${KIPRJMOD}/component_libraries/DRV8305NPHPR/DRV8305NPHPR.pretty)(options "")(descr ""))
+  (lib (name AS5600)(type KiCad)(uri ${KIPRJMOD}/component_libraries/AS5600/AS5600)(options "")(descr ""))
 )

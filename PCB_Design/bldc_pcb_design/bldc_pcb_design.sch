@@ -431,10 +431,10 @@ Connection ~ 13965 3490
 Wire Wire Line
 	13965 3490 13965 3660
 $Comp
-L Device:C_Small C?
+L Device:C_Small C21
 U 1 1 61331388
 P 3480 1810
-F 0 "C?" V 3251 1810 50  0000 C CNN
+F 0 "C21" V 3251 1810 50  0000 C CNN
 F 1 "10 uF 50V" V 3342 1810 50  0000 C CNN
 F 2 "" H 3480 1810 50  0001 C CNN
 F 3 "~" H 3480 1810 50  0001 C CNN
@@ -442,10 +442,10 @@ F 3 "~" H 3480 1810 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C22
 U 1 1 61331461
 P 3670 1810
-F 0 "C?" V 3885 1810 50  0000 C CNN
+F 0 "C22" V 3885 1810 50  0000 C CNN
 F 1 "0.1 uF 50V" V 3790 1810 50  0000 C CNN
 F 2 "" H 3670 1810 50  0001 C CNN
 F 3 "~" H 3670 1810 50  0001 C CNN
@@ -457,10 +457,10 @@ Wire Wire Line
 Wire Wire Line
 	3480 1710 3480 1610
 $Comp
-L power:GND #PWR?
+L power:GND #PWR016
 U 1 1 613638F2
 P 3575 2020
-F 0 "#PWR?" H 3575 1770 50  0001 C CNN
+F 0 "#PWR016" H 3575 1770 50  0001 C CNN
 F 1 "GND" H 3580 1847 50  0000 C CNN
 F 2 "" H 3575 2020 50  0001 C CNN
 F 3 "" H 3575 2020 50  0001 C CNN
@@ -477,34 +477,34 @@ Connection ~ 3575 2020
 Wire Wire Line
 	3575 2020 3670 2020
 $Comp
-L RF_Module:ESP32-WROOM-32D U?
+L RF_Module:ESP32-WROOM-32D U1
 U 1 1 613284E1
-P 1845 2680
-F 0 "U?" H 1400 4025 50  0000 C CNN
-F 1 "ESP32-WROOM-32D" V 1845 2690 50  0000 C CNN
-F 2 "RF_Module:ESP32-WROOM-32" H 1845 1180 50  0001 C CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" H 1545 2730 50  0001 C CNN
-	1    1845 2680
+P 1660 2695
+F 0 "U1" H 1215 4040 50  0000 C CNN
+F 1 "ESP32-WROOM-32D" V 1660 2705 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 1660 1195 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" H 1360 2745 50  0001 C CNN
+	1    1660 2695
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR04
 U 1 1 6132F0D7
-P 1845 4080
-F 0 "#PWR?" H 1845 3830 50  0001 C CNN
-F 1 "GND" H 1850 3907 50  0000 C CNN
-F 2 "" H 1845 4080 50  0001 C CNN
-F 3 "" H 1845 4080 50  0001 C CNN
-	1    1845 4080
+P 1660 4095
+F 0 "#PWR04" H 1660 3845 50  0001 C CNN
+F 1 "GND" H 1665 3922 50  0000 C CNN
+F 2 "" H 1660 4095 50  0001 C CNN
+F 3 "" H 1660 4095 50  0001 C CNN
+	1    1660 4095
 	1    0    0    -1  
 $EndComp
-Text Notes 935  790  0    157  ~ 31
+Text Notes 1385 805  0    157  ~ 31
 Microcontroller (ESP32)
 $Comp
-L Switch:SW_Push SW?
+L Switch:SW_Push SW1
 U 1 1 61407B87
 P 3315 3400
-F 0 "SW?" V 3361 3352 50  0000 R CNN
+F 0 "SW1" V 3361 3352 50  0000 R CNN
 F 1 "BOOT" V 3270 3352 50  0000 R CNN
 F 2 "" H 3315 3600 50  0001 C CNN
 F 3 "~" H 3315 3600 50  0001 C CNN
@@ -512,10 +512,10 @@ F 3 "~" H 3315 3600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R3
 U 1 1 6140AE4F
 P 3315 2815
-F 0 "R?" H 3383 2861 50  0000 L CNN
+F 0 "R3" H 3383 2861 50  0000 L CNN
 F 1 "10k" H 3383 2770 50  0000 L CNN
 F 2 "" H 3315 2815 50  0001 C CNN
 F 3 "~" H 3315 2815 50  0001 C CNN
@@ -523,10 +523,10 @@ F 3 "~" H 3315 2815 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R8
 U 1 1 6140B20D
 P 4270 2815
-F 0 "R?" H 4338 2861 50  0000 L CNN
+F 0 "R8" H 4338 2861 50  0000 L CNN
 F 1 "10k" H 4338 2770 50  0000 L CNN
 F 2 "" H 4270 2815 50  0001 C CNN
 F 3 "~" H 4270 2815 50  0001 C CNN
@@ -534,11 +534,11 @@ F 3 "~" H 4270 2815 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C23
 U 1 1 6140B773
 P 4650 3400
-F 0 "C?" V 4865 3400 50  0000 C CNN
-F 1 "1 uF 50V" V 4770 3400 50  0000 C CNN
+F 0 "C23" V 4865 3400 50  0000 C CNN
+F 1 "1uF 50V" V 4770 3400 50  0000 C CNN
 F 2 "" H 4650 3400 50  0001 C CNN
 F 3 "~" H 4650 3400 50  0001 C CNN
 	1    4650 3400
@@ -547,21 +547,10 @@ $EndComp
 Wire Wire Line
 	3315 2915 3315 3075
 $Comp
-L power:+3V3 #PWR?
-U 1 1 61445A4C
-P 3315 2715
-F 0 "#PWR?" H 3315 2565 50  0001 C CNN
-F 1 "+3V3" H 3330 2888 50  0000 C CNN
-F 2 "" H 3315 2715 50  0001 C CNN
-F 3 "" H 3315 2715 50  0001 C CNN
-	1    3315 2715
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
+L power:GND #PWR015
 U 1 1 61446B2F
 P 3315 3600
-F 0 "#PWR?" H 3315 3350 50  0001 C CNN
+F 0 "#PWR015" H 3315 3350 50  0001 C CNN
 F 1 "GND" H 3320 3427 50  0000 C CNN
 F 2 "" H 3315 3600 50  0001 C CNN
 F 3 "" H 3315 3600 50  0001 C CNN
@@ -569,10 +558,10 @@ F 3 "" H 3315 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR018
 U 1 1 6146B3AD
 P 4270 3600
-F 0 "#PWR?" H 4270 3350 50  0001 C CNN
+F 0 "#PWR018" H 4270 3350 50  0001 C CNN
 F 1 "GND" H 4275 3427 50  0000 C CNN
 F 2 "" H 4270 3600 50  0001 C CNN
 F 3 "" H 4270 3600 50  0001 C CNN
@@ -580,21 +569,10 @@ F 3 "" H 4270 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR?
-U 1 1 6147FC41
-P 4270 2715
-F 0 "#PWR?" H 4270 2565 50  0001 C CNN
-F 1 "+3V3" H 4285 2888 50  0000 C CNN
-F 2 "" H 4270 2715 50  0001 C CNN
-F 3 "" H 4270 2715 50  0001 C CNN
-	1    4270 2715
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW?
+L Switch:SW_Push SW2
 U 1 1 6140918C
 P 4270 3400
-F 0 "SW?" V 4316 3352 50  0000 R CNN
+F 0 "SW2" V 4316 3352 50  0000 R CNN
 F 1 "RESET" V 4225 3352 50  0000 R CNN
 F 2 "" H 4270 3600 50  0001 C CNN
 F 3 "~" H 4270 3600 50  0001 C CNN
@@ -627,35 +605,35 @@ Wire Wire Line
 Connection ~ 4270 3080
 Wire Wire Line
 	4270 3080 4270 3200
-Text GLabel 1115 1480 0    39   Input ~ 0
+Text GLabel 930  1495 0    39   Input ~ 0
 RESET
 Wire Wire Line
-	1245 1480 1115 1480
-Text GLabel 2620 1480 2    39   Input ~ 0
+	1060 1495 930  1495
+Text GLabel 2435 1495 2    39   Input ~ 0
 BOOT
 Wire Wire Line
-	2445 1480 2620 1480
+	2260 1495 2435 1495
 $Comp
-L Connector:Conn_01x04_Female J?
+L Connector:Conn_01x04_Female J1
 U 1 1 615344D0
 P 3405 4165
-F 0 "J?" V 3343 3877 50  0000 R CNN
+F 0 "J1" V 3343 3877 50  0000 R CNN
 F 1 "Conn_01x04_Female" V 3252 3877 50  0000 R CNN
 F 2 "" H 3405 4165 50  0001 C CNN
 F 3 "~" H 3405 4165 50  0001 C CNN
 	1    3405 4165
 	0    -1   -1   0   
 $EndComp
-Text GLabel 2620 1580 2    39   Input ~ 0
+Text GLabel 2435 1595 2    39   Input ~ 0
 TX
-Text GLabel 2620 1780 2    39   Input ~ 0
+Text GLabel 2435 1795 2    39   Input ~ 0
 RX
 Wire Wire Line
-	2445 1780 2620 1780
+	2260 1795 2435 1795
 Text GLabel 3305 4565 3    39   Input ~ 0
 RX
 Wire Wire Line
-	2445 1580 2620 1580
+	2260 1595 2435 1595
 Wire Wire Line
 	3305 4365 3305 4565
 Text GLabel 3405 4565 3    39   Input ~ 0
@@ -669,10 +647,10 @@ Wire Wire Line
 Text GLabel 3505 4565 3    39   Input ~ 0
 3V3_ISOLATED
 $Comp
-L power:GND #PWR?
+L power:GND #PWR017
 U 1 1 615934C4
 P 3605 4565
-F 0 "#PWR?" H 3605 4315 50  0001 C CNN
+F 0 "#PWR017" H 3605 4315 50  0001 C CNN
 F 1 "GND" V 3605 4375 50  0000 C CNN
 F 2 "" H 3605 4565 50  0001 C CNN
 F 3 "" H 3605 4565 50  0001 C CNN
@@ -681,7 +659,7 @@ F 3 "" H 3605 4565 50  0001 C CNN
 $EndComp
 Text Notes 3795 4850 0    59   ~ 0
 3V3_ISOLATED is used to \npower ESP32 when board \nisn't being powered \nby VIN.
-Text GLabel 1845 1280 1    39   Input ~ 0
+Text GLabel 1660 1295 1    39   Input ~ 0
 3V3_IN
 Text GLabel 1815 4555 0    39   Input ~ 0
 3V3_ISOLATED
@@ -1299,4 +1277,167 @@ Wire Notes Line width 10
 	485  4430 2970 4430
 Wire Notes Line width 10
 	2970 2410 2970 5145
+$Comp
+L AS5600-ASOT:AS5600-ASOT U8
+U 1 1 6180CBD6
+P 2205 6345
+F 0 "U8" H 2805 6610 50  0000 C CNN
+F 1 "AS5600-ASOT" H 2805 6519 50  0000 C CNN
+F 2 "SOIC127P600X175-8N" H 3255 6445 50  0001 L CNN
+F 3 "http://www.ams.com/eng/content/download/639463/1698857/325295" H 3255 6345 50  0001 L CNN
+F 4 "Board Mount Hall Effect / Magnetic Sensors AS5600 Magnetic Sensor 12-Bit" H 3255 6245 50  0001 L CNN "Description"
+F 5 "1.75" H 3255 6145 50  0001 L CNN "Height"
+F 6 "ams" H 3255 6045 50  0001 L CNN "Manufacturer_Name"
+F 7 "AS5600-ASOT" H 3255 5945 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "985-AS5600-ASOT" H 3255 5845 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/ams/AS5600-ASOT?qs=KTMMzrZdriGJpjhsnAEYBA%3D%3D" H 3255 5745 50  0001 L CNN "Mouser Price/Stock"
+F 10 "AS5600-ASOT" H 3255 5645 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/as5600-asot/ams-ag?region=nac" H 3255 5545 50  0001 L CNN "Arrow Price/Stock"
+	1    2205 6345
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C20
+U 1 1 61815CDE
+P 1330 6550
+F 0 "C20" V 1545 6550 50  0000 C CNN
+F 1 "100 nF" V 1450 6550 50  0000 C CNN
+F 2 "" H 1330 6550 50  0001 C CNN
+F 3 "~" H 1330 6550 50  0001 C CNN
+	1    1330 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2205 6645 2135 6645
+Wire Wire Line
+	2135 6645 2135 6745
+$Comp
+L power:GND #PWR014
+U 1 1 6183198C
+P 2135 6745
+F 0 "#PWR014" H 2135 6495 50  0001 C CNN
+F 1 "GND" V 2135 6555 50  0000 C CNN
+F 2 "" H 2135 6745 50  0001 C CNN
+F 3 "" H 2135 6745 50  0001 C CNN
+	1    2135 6745
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2205 6345 2135 6345
+Wire Wire Line
+	2135 6345 2135 6445
+Wire Wire Line
+	2135 6445 2205 6445
+Wire Wire Line
+	2135 6345 2135 6185
+Connection ~ 2135 6345
+Text GLabel 2135 6185 1    39   Input ~ 0
+3V3_IN
+Text GLabel 1330 6380 1    39   Input ~ 0
+3V3_IN
+Wire Wire Line
+	1330 6380 1330 6450
+Wire Wire Line
+	1330 6650 1330 6720
+$Comp
+L power:GND #PWR03
+U 1 1 6186F8DF
+P 1330 6720
+F 0 "#PWR03" H 1330 6470 50  0001 C CNN
+F 1 "GND" V 1330 6530 50  0000 C CNN
+F 2 "" H 1330 6720 50  0001 C CNN
+F 3 "" H 1330 6720 50  0001 C CNN
+	1    1330 6720
+	1    0    0    -1  
+$EndComp
+Text Notes 1190 6795 1    59   ~ 0
+Decoupling cap,\nkeep close to\npower pins\n
+Text GLabel 3315 2715 1    39   Input ~ 0
+3V3_IN
+Text GLabel 4270 2715 1    39   Input ~ 0
+3V3_IN
+Text GLabel 3760 6445 2    39   Input ~ 0
+ENC_SDA
+Text GLabel 3760 6545 2    39   Input ~ 0
+ENC_SCL
+Wire Wire Line
+	3405 6545 3700 6545
+Wire Wire Line
+	3760 6445 3585 6445
+NoConn ~ 3405 6645
+$Comp
+L Device:R_Small_US R5
+U 1 1 618149BB
+P 3700 6125
+F 0 "R5" H 3768 6171 50  0000 L CNN
+F 1 "4.7k" H 3768 6080 50  0000 L CNN
+F 2 "" H 3700 6125 50  0001 C CNN
+F 3 "~" H 3700 6125 50  0001 C CNN
+	1    3700 6125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R4
+U 1 1 61811B61
+P 3585 6125
+F 0 "R4" H 3660 6080 50  0000 L CNN
+F 1 "4.7k" H 3650 6170 50  0000 L CNN
+F 2 "" H 3585 6125 50  0001 C CNN
+F 3 "~" H 3585 6125 50  0001 C CNN
+	1    3585 6125
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3585 6225 3585 6445
+Connection ~ 3585 6445
+Wire Wire Line
+	3585 6445 3405 6445
+Wire Wire Line
+	3700 6225 3700 6545
+Connection ~ 3700 6545
+Wire Wire Line
+	3700 6545 3760 6545
+Wire Wire Line
+	3585 6025 3585 5980
+Wire Wire Line
+	3585 5980 3645 5980
+Wire Wire Line
+	3700 5980 3700 6025
+Text GLabel 3645 5900 1    39   Input ~ 0
+3V3_IN
+Wire Wire Line
+	3645 5900 3645 5980
+Connection ~ 3645 5980
+Wire Wire Line
+	3645 5980 3700 5980
+Wire Wire Line
+	2205 6545 1990 6545
+Text GLabel 1990 6545 0    39   Input ~ 0
+ENC_OUT
+Text GLabel 3760 6345 2    39   Input ~ 0
+ENC_DIR
+Wire Wire Line
+	3405 6345 3760 6345
+Text Notes 1685 5465 0    157  ~ 31
+Magnetic Encoder
+Wire Notes Line width 20
+	485  7290 5150 7290
+Text Notes 4145 6610 0    39   ~ 0
+ENC_DIR -> GND, \nthen Clockwise\n\nENC_DIR -> VDD, \nthen Counter Clockwise
+Text GLabel 2435 1995 2    39   Input ~ 0
+ENC_SDA
+Wire Wire Line
+	2260 1995 2435 1995
+Text GLabel 2435 2695 2    39   Input ~ 0
+ENC_SCL
+Wire Wire Line
+	2260 2695 2435 2695
+Text GLabel 2435 2595 2    39   Input ~ 0
+ENC_DIR
+Text GLabel 2435 2495 2    39   Input ~ 0
+ENC_OUT
+Wire Wire Line
+	2260 2495 2435 2495
+Wire Wire Line
+	2435 2595 2260 2595
 $EndSCHEMATC
