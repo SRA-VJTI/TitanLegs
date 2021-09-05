@@ -1,54 +1,103 @@
-#include <stdio.h>
-#include <stdint.h>
+#include "driver/gpio.h"
+#include "driver/mcpwm.h"
+#include "driver/spi_master.h"
+#include "drv8305.h"
+#include "esp_err.h"
+#include "esp_log.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
-#include "esp_log.h"
-#include "esp_err.h"
-#include "spi_interface.h"
-#include "driver/gpio.h"
+#include <math.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <string.h>
 
-#define SPI_MODE  0
-#define MISO_PIN  12
-#define MOSI_PIN  13
-#define SCLK_PIN  14
-#define CS_PIN    15
-#define SPI_CLOCK 1000000  // 1 MHz
-#define MAX_TRANSFER_SZ  4094
+#define PWM_H_A 17
+#define PWM_H_B 5
+#define PWM_H_C 18
+
+#define PWM_FREQUENCY 20000
+
+#define MISO_PIN 12
+#define MOSI_PIN 13
+#define SCLK_PIN 14
+#define CS_PIN 15
 #define DRV8305_EN 2
+#define DRV8305_NFAULT 4
+
+static const char TAG[] = "bldc mcpwm";
+
+void init_gpio() {
+
+  // MCPWM
+  mcpwm_gpio_init(MCPWM_UNIT_0, MCPWM0A, PWM_H_A);
+  mcpwm_gpio_init(MCPWM_UNIT_0, MCPWM1A, PWM_H_B);
+  mcpwm_gpio_init(MCPWM_UNIT_0, MCPWM2A, PWM_H_C);
+
+  drv8305_t dev = {.DRV_EN_GATE_pin = DRV8305_EN,
+                   .DRV_N_FAULT_pin = DRV8305_NFAULT,
+                   .DRV_MISO_SDO_pin = MISO_PIN,
+                   .DRV_MOSI_SDI_pin = MOSI_PIN,
+                   .DRV_SCLK_pin = SCLK_PIN,
+                   .DRV_SCS_pin = CS_PIN,
+                   .spi_host = HSPI_HOST,
+                   .max_spi_clockspeed = 1000000};
+
+  // Initialize DRV8305
+  ESP_ERROR_CHECK(drv8305_init(&dev));
+
+  drv8305_control_07_reg_t pwm_mode_config;
+  drv8305_read_control_07_register(&dev, &pwm_mode_config);
+  ESP_LOGI(TAG, "INITIAL VALUE %x", pwm_mode_config.PWM_MODE);
+  pwm_mode_config.PWM_MODE = 0b01;
+  ESP_ERROR_CHECK(drv8305_write_control_07_register(&dev, pwm_mode_config));
+
+  drv8305_read_control_07_register(&dev, &pwm_mode_config);
+  ESP_LOGI(TAG, "FINAL VALUE %x", pwm_mode_config.PWM_MODE);
+}
+
+void mcpwm_config() {
+  mcpwm_config_t pwm_config;
+  pwm_config.frequency = PWM_FREQUENCY; // frequency = 20000Hz
+  pwm_config.cmpr_a = 0;                // duty cycle of PWMxA = 50.0%
+  pwm_config.cmpr_b = 0;                // duty cycle of PWMxB = 50.0%
+  pwm_config.counter_mode =
+      MCPWM_UP_DOWN_COUNTER;                // Up-down counter (triangle wave)
+  pwm_config.duty_mode = MCPWM_DUTY_MODE_0; // Active HIGH
+  mcpwm_init(MCPWM_UNIT_0, MCPWM_TIMER_0,
+             &pwm_config); // Configure PWM0A & PWM0B with above settings
+  mcpwm_init(MCPWM_UNIT_0, MCPWM_TIMER_1,
+             &pwm_config); // Configure PWM0A & PWM0B with above settings
+  mcpwm_init(MCPWM_UNIT_0, MCPWM_TIMER_2,
+             &pwm_config); // Configure PWM0A & PWM0B with above settings
+
+  mcpwm_stop(MCPWM_UNIT_0, MCPWM_TIMER_0);
+  mcpwm_stop(MCPWM_UNIT_0, MCPWM_TIMER_1);
+  mcpwm_stop(MCPWM_UNIT_0, MCPWM_TIMER_2);
+
+  mcpwm_start(MCPWM_UNIT_0, MCPWM_TIMER_0);
+  mcpwm_start(MCPWM_UNIT_0, MCPWM_TIMER_1);
+  mcpwm_start(MCPWM_UNIT_0, MCPWM_TIMER_2);
+
+  mcpwm_sync_enable(MCPWM_UNIT_0, MCPWM_TIMER_0, MCPWM_SELECT_SYNC0, 0);
+  mcpwm_sync_enable(MCPWM_UNIT_0, MCPWM_TIMER_1, MCPWM_SELECT_SYNC0, 0);
+  mcpwm_sync_enable(MCPWM_UNIT_0, MCPWM_TIMER_2, MCPWM_SELECT_SYNC0, 0);
+}
 
 void app_main() {
-    printf("SPIbus Example \n");
-    fflush(stdout);
+  init_gpio();
+  mcpwm_config();
 
-    gpio_config_t io_conf;
-    //disable interrupt
-    io_conf.intr_type = GPIO_INTR_DISABLE;
-    //set as output mode
-    io_conf.mode = GPIO_MODE_OUTPUT;
-    //bit mask of the pins that you want to set,e.g.GPIO18/19
-    io_conf.pin_bit_mask = 1ULL<<DRV8305_EN;
-    //disable pull-down mode
-    io_conf.pull_down_en = 0;
-    //disable pull-up mode
-    io_conf.pull_up_en = 0;
-    //configure GPIO with the given settings
-    gpio_config(&io_conf);
-    gpio_set_level(DRV8305_EN,1);
-    
-    spi_device_handle_t device;
-    ESP_ERROR_CHECK( hspi.begin(MOSI_PIN, MISO_PIN, SCLK_PIN,MAX_TRANSFER_SZ));
-    ESP_ERROR_CHECK( hspi.addDevice_cs(SPI_MODE, SPI_CLOCK, CS_PIN, &device));
+  // PWM values to make it spin
+  int pwm[3][3] = {{0, 40, 80}, {80, 40, 0}, {40, 80, 0}};
 
-    uint8_t buffer=0;
-    while (1) {
-        for(int i=0x0;i<13;i++){
-            ESP_ERROR_CHECK(hspi.readByte(device, i, &buffer));
-            printf("Register %x Description:%d\n",i,buffer);
-        }
-        vTaskDelay(1000 / portTICK_PERIOD_MS);
+  // SPIN motor with reasonable speed, adjust delay accordingly
+  for (size_t i = 1; i <= 3; i++) {
+    mcpwm_set_duty(MCPWM_UNIT_0, MCPWM_TIMER_0, MCPWM_OPR_A, pwm[0][i % 3]);
+    mcpwm_set_duty(MCPWM_UNIT_0, MCPWM_TIMER_1, MCPWM_OPR_A, pwm[1][i % 3]);
+    mcpwm_set_duty(MCPWM_UNIT_0, MCPWM_TIMER_2, MCPWM_OPR_A, pwm[2][i % 3]);
+    vTaskDelay(10 / portTICK_PERIOD_MS);
+    if (i == 3) {
+      i = 0;
     }
-
-    hspi.removeDevice(device);
-    hspi.close();
-    vTaskDelay(portMAX_DELAY);
+  }
 }
