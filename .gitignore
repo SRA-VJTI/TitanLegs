@@ -78,3 +78,17 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+
+.vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+
+/Firmware/components/esp-idf-drv8305
+/Firmware/components/esp-idf-drv8305/*
