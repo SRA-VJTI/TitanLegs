@@ -14,422 +14,71 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L DRV8305NPHPR:DRV8305NPHPR IC1
-U 1 1 61052D6F
-P 13835 4350
-F 0 "IC1" H 14640 4010 50  0000 L CNN
-F 1 "DRV8305NPHPR" H 14420 3765 50  0000 L CNN
-F 2 "QFP50P900X900X120-48N" H 15385 4950 50  0001 L CNN
-F 3 "http://www.mouser.com/ds/2/405/drv8305-768621.pdf" H 15385 4850 50  0001 L CNN
-F 4 "Motor / Motion / Ignition Controllers & Drivers Three Phase Gate Driver with Three Integrated Current Shunt Amplifiers 48-HTQFP -40 to 125" H 15385 4750 50  0001 L CNN "Description"
-F 5 "1.2" H 15385 4650 50  0001 L CNN "Height"
-F 6 "Texas Instruments" H 15385 4550 50  0001 L CNN "Manufacturer_Name"
-F 7 "DRV8305NPHPR" H 15385 4450 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "595-DRV8305NPHPR" H 15385 4350 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/DRV8305NPHPR?qs=kFLL9AfgRSDaehWhXenR2Q%3D%3D" H 15385 4250 50  0001 L CNN "Mouser Price/Stock"
-F 10 "DRV8305NPHPR" H 15385 4150 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/drv8305nphpr/texas-instruments" H 15385 4050 50  0001 L CNN "Arrow Price/Stock"
-	1    13835 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14135 3550 14135 3490
-Wire Wire Line
-	14435 3550 14435 3490
-Wire Wire Line
-	14835 3550 14835 3490
-Wire Wire Line
-	15235 3550 15235 3490
-Wire Wire Line
-	15535 4350 15595 4350
-Wire Wire Line
-	15535 4450 15595 4450
-Wire Wire Line
-	15535 4550 15595 4550
-Wire Wire Line
-	15535 4650 15595 4650
-Wire Wire Line
-	15535 4750 15595 4750
-Wire Wire Line
-	15535 4850 15595 4850
-Wire Wire Line
-	15535 4950 15595 4950
-Wire Wire Line
-	15535 5050 15595 5050
-Wire Wire Line
-	15535 5150 15595 5150
-Wire Wire Line
-	15535 5250 15595 5250
-Wire Wire Line
-	15535 5350 15595 5350
-Wire Wire Line
-	15535 5450 15595 5450
-Wire Wire Line
-	14635 6150 14635 6210
-Wire Wire Line
-	14135 6150 14135 6210
-Wire Wire Line
-	14235 6150 14235 6210
-Wire Wire Line
-	14435 6150 14435 6210
-Wire Wire Line
-	14535 6150 14535 6210
-Text Label 13775 4350 2    50   ~ 0
-DRV_EN_GATE
-Text Label 13775 4450 2    50   ~ 0
-DRV_HA
-Text Label 13775 4550 2    50   ~ 0
-DRV_LA
-Text Label 13775 4650 2    50   ~ 0
-DRV_HB
-Text Label 13775 4750 2    50   ~ 0
-DRV_LB
-Text Label 13775 4850 2    50   ~ 0
-DRV_HC
-Text Label 13775 4950 2    50   ~ 0
-DRV_LC
-Text Label 13775 5050 2    50   ~ 0
-DRV_nFAULT
-Text Label 13775 5150 2    50   ~ 0
-DRV_nSCS
-Text Label 13775 5250 2    50   ~ 0
-SPI_MOSI
-Text Label 13775 5350 2    50   ~ 0
-SPI_MISO
-Text Label 13775 5450 2    50   ~ 0
-SPI_SCLK_INT
-$Comp
 L power:GND #PWR02
 U 1 1 612ACDB6
-P 14235 6210
-F 0 "#PWR02" H 14235 5960 50  0001 C CNN
-F 1 "GND" H 14240 6037 50  0000 C CNN
-F 2 "" H 14235 6210 50  0001 C CNN
-F 3 "" H 14235 6210 50  0001 C CNN
-	1    14235 6210
+P 10565 4285
+F 0 "#PWR02" H 10565 4035 50  0001 C CNN
+F 1 "GND" H 10570 4112 50  0000 C CNN
+F 2 "" H 10565 4285 50  0001 C CNN
+F 3 "" H 10565 4285 50  0001 C CNN
+	1    10565 4285
 	1    0    0    -1  
-$EndComp
-NoConn ~ 14135 6210
-Text Label 15595 4350 0    50   ~ 0
-GHA
-Text Label 15595 4450 0    50   ~ 0
-SHA
-Text Label 15595 4550 0    50   ~ 0
-SLA
-Text Label 15595 4650 0    50   ~ 0
-GLA
-Text Label 15595 4750 0    50   ~ 0
-GHB
-Text Label 15595 4850 0    50   ~ 0
-SHB
-Text Label 15595 4950 0    50   ~ 0
-SLB
-Text Label 15595 5050 0    50   ~ 0
-GLB
-Text Label 15595 5150 0    50   ~ 0
-GHC
-Text Label 15595 5250 0    50   ~ 0
-SHC
-Text Label 15595 5350 0    50   ~ 0
-SLC
-Text Label 15595 5450 0    50   ~ 0
-GLC
-Text Label 15235 6210 3    50   ~ 0
-SP1
-Text Label 15135 6210 3    50   ~ 0
-SN1
-Text Label 15035 6210 3    50   ~ 0
-SP2
-Text Label 14935 6210 3    50   ~ 0
-SN2
-Text Label 14835 6210 3    50   ~ 0
-SP3
-Text Label 14735 6210 3    50   ~ 0
-SN3
-Text Label 14635 6210 3    50   ~ 0
-DRV_SO3
-Text Label 14535 6210 3    50   ~ 0
-DRV_SO2
-Text Label 14435 6210 3    50   ~ 0
-DRV_SO1
-Text Label 14335 6595 2    50   ~ 0
-DRV_AVDD
-Wire Wire Line
-	15135 6150 15135 6405
-Wire Wire Line
-	14935 6150 14935 6405
-Wire Wire Line
-	14735 6150 14735 6405
-Wire Wire Line
-	14335 6595 14010 6595
-Wire Wire Line
-	14335 6150 14335 6595
-$Comp
-L Device:C C4
-U 1 1 6132DCA3
-P 14735 6555
-F 0 "C4" H 14745 6630 50  0000 L CNN
-F 1 "1nF" H 14575 6470 50  0000 L CNN
-F 2 "" H 14773 6405 50  0001 C CNN
-F 3 "~" H 14735 6555 50  0001 C CNN
-	1    14735 6555
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C6
-U 1 1 6132E765
-P 14935 6555
-F 0 "C6" H 14935 6630 50  0000 L CNN
-F 1 "1nF" H 14790 6465 50  0000 L CNN
-F 2 "" H 14973 6405 50  0001 C CNN
-F 3 "~" H 14935 6555 50  0001 C CNN
-	1    14935 6555
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C8
-U 1 1 6132F188
-P 15135 6555
-F 0 "C8" H 15135 6630 50  0000 L CNN
-F 1 "1nF" H 14995 6470 50  0000 L CNN
-F 2 "" H 15173 6405 50  0001 C CNN
-F 3 "~" H 15135 6555 50  0001 C CNN
-	1    15135 6555
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14835 6735 14735 6735
-Wire Wire Line
-	14735 6735 14735 6705
-Wire Wire Line
-	14835 6150 14835 6735
-Wire Wire Line
-	14935 6705 14935 6735
-Wire Wire Line
-	14935 6735 15035 6735
-Wire Wire Line
-	15035 6150 15035 6735
-Wire Wire Line
-	15135 6705 15135 6735
-Wire Wire Line
-	15135 6735 15235 6735
-Wire Wire Line
-	15235 6150 15235 6735
-$Comp
-L Device:C C3
-U 1 1 6135FBF8
-P 13860 6595
-F 0 "C3" V 14112 6595 50  0000 C CNN
-F 1 "1uF" V 14021 6595 50  0000 C CNN
-F 2 "" H 13898 6445 50  0001 C CNN
-F 3 "~" H 13860 6595 50  0001 C CNN
-	1    13860 6595
-	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR01
 U 1 1 61360C33
-P 13710 6595
-F 0 "#PWR01" H 13710 6345 50  0001 C CNN
-F 1 "GND" H 13715 6422 50  0000 C CNN
-F 2 "" H 13710 6595 50  0001 C CNN
-F 3 "" H 13710 6595 50  0001 C CNN
-	1    13710 6595
-	-1   0    0    1   
+P 15565 4390
+F 0 "#PWR01" H 15565 4140 50  0001 C CNN
+F 1 "GND" H 15570 4217 50  0000 C CNN
+F 2 "" H 15565 4390 50  0001 C CNN
+F 3 "" H 15565 4390 50  0001 C CNN
+	1    15565 4390
+	1    0    0    -1  
 $EndComp
-Text Label 14135 3490 1    50   ~ 0
-DRV_VREG
-Text Label 14235 3490 1    50   ~ 0
-DRV_WAKE
-Text Label 14335 3490 1    50   ~ 0
-DRV_DVDD
-Text Label 14435 3490 1    50   ~ 0
-GND
-Text Label 14535 3490 1    50   ~ 0
-VDRAIN
-Text Label 14635 3490 1    50   ~ 0
-CP1H
-Text Label 14735 3490 1    50   ~ 0
-CP1L
-Text Label 14835 3490 1    50   ~ 0
-PVDD
-Text Label 14935 3490 1    50   ~ 0
-CP2L
-Text Label 15035 3490 1    50   ~ 0
-CP2H
-Text Label 15135 3490 1    50   ~ 0
-VCPH
-Text Label 15235 3490 1    50   ~ 0
-VCP_LSD
 $Comp
 L Device:C C2
 U 1 1 613C1C94
-P 13815 3490
-F 0 "C2" V 13690 3495 50  0000 C CNN
-F 1 "1uF" V 13755 3605 50  0000 C CNN
-F 2 "" H 13853 3340 50  0001 C CNN
-F 3 "~" H 13815 3490 50  0001 C CNN
-	1    13815 3490
-	0    1    1    0   
+P 14290 2630
+F 0 "C2" H 14120 2635 50  0000 C CNN
+F 1 "1uF 6.3V" H 14110 2735 50  0000 C CNN
+F 2 "" H 14328 2480 50  0001 C CNN
+F 3 "~" H 14290 2630 50  0001 C CNN
+	1    14290 2630
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	14135 3490 13965 3490
-Text Label 13965 3660 2    50   ~ 0
-3V3
-Text Label 13665 3490 3    50   ~ 0
-GND
-$Comp
-L Device:R R1
-U 1 1 61454DCA
-P 13805 3225
-F 0 "R1" V 13850 3075 50  0000 C CNN
-F 1 "100k" V 13890 3225 50  0000 C CNN
-F 2 "" V 13735 3225 50  0001 C CNN
-F 3 "~" H 13805 3225 50  0001 C CNN
-	1    13805 3225
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	13775 5450 13835 5450
-Wire Wire Line
-	13775 5350 13835 5350
-Wire Wire Line
-	13775 5250 13835 5250
-Wire Wire Line
-	13775 5150 13835 5150
-Wire Wire Line
-	13775 5050 13835 5050
-Wire Wire Line
-	13775 4950 13835 4950
-Wire Wire Line
-	13775 4850 13835 4850
-Wire Wire Line
-	13775 4750 13835 4750
-Wire Wire Line
-	13775 4650 13835 4650
-Wire Wire Line
-	13775 4550 13835 4550
-Wire Wire Line
-	13775 4450 13835 4450
-Wire Wire Line
-	13775 4350 13835 4350
-Wire Wire Line
-	13955 3225 14235 3225
-Wire Wire Line
-	14235 3225 14235 3550
-Text Label 13655 3225 3    50   ~ 0
-PVDD
 $Comp
 L Device:C C1
 U 1 1 614B2098
-P 13815 2975
-F 0 "C1" V 13960 2975 50  0000 C CNN
-F 1 "1uF" V 13880 2855 50  0000 C CNN
-F 2 "" H 13853 2825 50  0001 C CNN
-F 3 "~" H 13815 2975 50  0001 C CNN
-	1    13815 2975
-	0    -1   -1   0   
+P 14970 2685
+F 0 "C1" H 14785 2700 50  0000 C CNN
+F 1 "1uF 6.3V" H 14765 2785 50  0000 C CNN
+F 2 "" H 15008 2535 50  0001 C CNN
+F 3 "~" H 14970 2685 50  0001 C CNN
+	1    14970 2685
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	13965 2975 14335 2975
-Wire Wire Line
-	14335 2975 14335 3550
-Text Label 13665 2975 3    50   ~ 0
-GND
-$Comp
-L Device:R R2
-U 1 1 614CBA09
-P 14535 3095
-F 0 "R2" H 14395 3150 50  0000 L CNN
-F 1 "100" H 14345 3065 50  0000 L CNN
-F 2 "" V 14465 3095 50  0001 C CNN
-F 3 "~" H 14535 3095 50  0001 C CNN
-	1    14535 3095
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14535 3245 14535 3550
-Text Label 14535 2945 2    50   ~ 0
-PVDD
-$Comp
-L Device:C C5
-U 1 1 614FB54A
-P 14825 2975
-F 0 "C5" H 14940 3021 50  0000 L CNN
-F 1 "C" H 14940 2930 50  0000 L CNN
-F 2 "" H 14863 2825 50  0001 C CNN
-F 3 "~" H 14825 2975 50  0001 C CNN
-	1    14825 2975
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C7
-U 1 1 6150498A
-P 15115 3120
-F 0 "C7" H 15230 3166 50  0000 L CNN
-F 1 "C" H 15230 3075 50  0000 L CNN
-F 2 "" H 15153 2970 50  0001 C CNN
-F 3 "~" H 15115 3120 50  0001 C CNN
-	1    15115 3120
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	14635 2975 14675 2975
-Wire Wire Line
-	14635 2975 14635 3550
-Wire Wire Line
-	14735 3070 14975 3070
-Wire Wire Line
-	14975 3070 14975 2975
-Wire Wire Line
-	14735 3070 14735 3550
-Wire Wire Line
-	14965 3120 14935 3120
-Wire Wire Line
-	14935 3120 14935 3550
-Wire Wire Line
-	15035 3235 15265 3235
-Wire Wire Line
-	15265 3235 15265 3120
-Wire Wire Line
-	15035 3235 15035 3550
-Wire Wire Line
-	15235 3490 15345 3490
-Wire Wire Line
-	15135 3345 15135 3550
-Wire Wire Line
-	15135 3345 15345 3345
 $Comp
 L Device:C C9
 U 1 1 61590AEF
-P 15495 3345
-F 0 "C9" V 15530 3400 50  0000 L CNN
-F 1 "2.2uF" V 15435 3080 50  0000 L CNN
-F 2 "" H 15533 3195 50  0001 C CNN
-F 3 "~" H 15495 3345 50  0001 C CNN
-	1    15495 3345
-	0    -1   -1   0   
+P 13620 1485
+F 0 "C9" H 13730 1485 50  0000 L CNN
+F 1 "2.2uF 16V" H 13665 1390 50  0000 L CNN
+F 2 "" H 13658 1335 50  0001 C CNN
+F 3 "~" H 13620 1485 50  0001 C CNN
+	1    13620 1485
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C10
 U 1 1 6159B72C
-P 15495 3555
-F 0 "C10" V 15530 3600 50  0000 L CNN
-F 1 "1uF" V 15430 3365 50  0000 L CNN
-F 2 "" H 15533 3405 50  0001 C CNN
-F 3 "~" H 15495 3555 50  0001 C CNN
-	1    15495 3555
-	0    -1   -1   0   
+P 14205 1485
+F 0 "C10" H 14310 1495 50  0000 L CNN
+F 1 "1uF 16V" H 14235 1390 50  0000 L CNN
+F 2 "" H 14243 1335 50  0001 C CNN
+F 3 "~" H 14205 1485 50  0001 C CNN
+	1    14205 1485
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	15345 3555 15345 3490
-Text Label 15645 3555 0    50   ~ 0
-GND
-Text Label 15645 3345 0    50   ~ 0
-PVDD
-Connection ~ 13965 3490
-Wire Wire Line
-	13965 3490 13965 3660
 $Comp
 L Device:C_Small C21
 U 1 1 61331388
@@ -498,7 +147,7 @@ F 3 "" H 1660 4095 50  0001 C CNN
 	1    1660 4095
 	1    0    0    -1  
 $EndComp
-Text Notes 1385 805  0    157  ~ 31
+Text Notes 1330 865  0    157  ~ 31
 Microcontroller (ESP32)
 $Comp
 L Switch:SW_Push SW1
@@ -689,586 +338,126 @@ Wire Wire Line
 Connection ~ 3575 1610
 Wire Wire Line
 	3575 1610 3670 1610
-Text Notes 7880 5015 0    168  ~ 0
+Text Notes 5725 5500 0    157  ~ 31
 Additional Circuitry
-Text Notes 7015 750  0    168  ~ 0
+Text Notes 5215 870  0    157  ~ 31
 3 Phased Gate MOSFET Switches
-Wire Notes Line
-	6970 470  6970 6540
 Wire Notes Line
 	6970 470  6975 470 
 Wire Notes Line
-	11215 5040 6985 5040
+	9420 4910 9420 4920
 Wire Notes Line
-	11220 4790 11220 4800
-Wire Notes Line
-	11225 800  11225 805 
-Text Label 10405 5745 2    50   ~ 0
-VOLT_MON
-Connection ~ 10405 6125
-$Comp
-L power:GND #PWR012
-U 1 1 6191192A
-P 10405 6125
-F 0 "#PWR012" H 10405 5875 50  0001 C CNN
-F 1 "GND" H 10410 5952 50  0000 C CNN
-F 2 "" H 10405 6125 50  0001 C CNN
-F 3 "" H 10405 6125 50  0001 C CNN
-	1    10405 6125
-	1    0    0    -1  
-$EndComp
+	9425 920  9425 925 
 Wire Wire Line
-	10735 6125 10735 6090
-Wire Wire Line
-	10405 6125 10735 6125
-Wire Wire Line
-	10405 6085 10405 6125
-Wire Wire Line
-	10405 5745 10405 5785
-Connection ~ 10405 5745
-Wire Wire Line
-	10735 5745 10735 5790
-Wire Wire Line
-	10405 5745 10735 5745
-Wire Wire Line
-	10405 5680 10405 5745
-Wire Wire Line
-	10405 5380 10405 5285
-$Comp
-L Device:C C19
-U 1 1 618CB50E
-P 10735 5940
-F 0 "C19" H 10850 5986 50  0000 L CNN
-F 1 "C" H 10850 5895 50  0000 L CNN
-F 2 "" H 10773 5790 50  0001 C CNN
-F 3 "~" H 10735 5940 50  0001 C CNN
-	1    10735 5940
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R7
-U 1 1 618CB1DC
-P 10405 5935
-F 0 "R7" H 10475 5981 50  0000 L CNN
-F 1 "R" H 10475 5890 50  0000 L CNN
-F 2 "" V 10335 5935 50  0001 C CNN
-F 3 "~" H 10405 5935 50  0001 C CNN
-	1    10405 5935
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R6
-U 1 1 618CAF73
-P 10405 5530
-F 0 "R6" H 10475 5576 50  0000 L CNN
-F 1 "R" H 10475 5485 50  0000 L CNN
-F 2 "" V 10335 5530 50  0001 C CNN
-F 3 "~" H 10405 5530 50  0001 C CNN
-	1    10405 5530
-	1    0    0    -1  
-$EndComp
-Text Label 10405 5285 0    50   ~ 0
-PVDD
-Wire Wire Line
-	8260 6190 8420 6190
-Connection ~ 8260 6190
-$Comp
-L power:GND #PWR06
-U 1 1 618580DC
-P 8260 6190
-F 0 "#PWR06" H 8260 5940 50  0001 C CNN
-F 1 "GND" H 8265 6017 50  0000 C CNN
-F 2 "" H 8260 6190 50  0001 C CNN
-F 3 "" H 8260 6190 50  0001 C CNN
-	1    8260 6190
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR05
-U 1 1 618575D4
-P 8260 5715
-F 0 "#PWR05" H 8260 5565 50  0001 C CNN
-F 1 "+3V3" H 8275 5888 50  0000 C CNN
-F 2 "" H 8260 5715 50  0001 C CNN
-F 3 "" H 8260 5715 50  0001 C CNN
-	1    8260 5715
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8260 5770 8420 5770
-Connection ~ 8260 5770
-Wire Wire Line
-	8260 5770 8260 5715
-Wire Wire Line
-	8420 5770 8720 5770
-Connection ~ 8420 5770
-Wire Wire Line
-	8115 5770 8260 5770
-Wire Wire Line
-	8420 5825 8420 5770
-Connection ~ 8115 5770
-Wire Wire Line
-	8115 5825 8115 5770
-Wire Wire Line
-	8720 5770 8720 5830
-Wire Wire Line
-	7830 5770 8115 5770
-Wire Wire Line
-	7830 5820 7830 5770
-Wire Wire Line
-	8420 6190 8720 6190
-Connection ~ 8420 6190
-Wire Wire Line
-	8420 6125 8420 6190
-Wire Wire Line
-	8115 6190 8260 6190
-Connection ~ 8115 6190
-Wire Wire Line
-	8115 6125 8115 6190
-Wire Wire Line
-	8720 6190 8720 6130
-Wire Wire Line
-	7830 6190 8115 6190
-Wire Wire Line
-	7830 6120 7830 6190
-$Comp
-L Device:C C11
-U 1 1 617EE5F9
-P 7830 5970
-F 0 "C11" H 7945 6016 50  0000 L CNN
-F 1 "100nF" H 7850 5875 50  0000 L CNN
-F 2 "" H 7868 5820 50  0001 C CNN
-F 3 "~" H 7830 5970 50  0001 C CNN
-	1    7830 5970
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C15
-U 1 1 617E2C08
-P 8720 5980
-F 0 "C15" H 8835 6026 50  0000 L CNN
-F 1 "100nF" H 8745 5895 50  0000 L CNN
-F 2 "" H 8758 5830 50  0001 C CNN
-F 3 "~" H 8720 5980 50  0001 C CNN
-	1    8720 5980
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C14
-U 1 1 617D703B
-P 8420 5975
-F 0 "C14" H 8535 6021 50  0000 L CNN
-F 1 "100nF" H 8435 5885 50  0000 L CNN
-F 2 "" H 8458 5825 50  0001 C CNN
-F 3 "~" H 8420 5975 50  0001 C CNN
-	1    8420 5975
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C13
-U 1 1 617D6084
-P 8115 5975
-F 0 "C13" H 8230 6021 50  0000 L CNN
-F 1 "100nF" H 8135 5885 50  0000 L CNN
-F 2 "" H 8153 5825 50  0001 C CNN
-F 3 "~" H 8115 5975 50  0001 C CNN
-	1    8115 5975
-	1    0    0    -1  
-$EndComp
-Connection ~ 10405 4455
-Connection ~ 9110 4470
-Text Label 9245 5755 2    50   ~ 0
-3V3
-Wire Wire Line
-	9345 5755 9245 5755
-$Comp
-L power:+3V3 #PWR09
-U 1 1 616EAEB2
-P 9345 5755
-F 0 "#PWR09" H 9345 5605 50  0001 C CNN
-F 1 "+3V3" V 9360 5883 50  0000 L CNN
-F 2 "" H 9345 5755 50  0001 C CNN
-F 3 "" H 9345 5755 50  0001 C CNN
-	1    9345 5755
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	10820 1030 10880 1030
+	9020 1150 9080 1150
 $Comp
 L power:GND #PWR013
 U 1 1 61649FB4
-P 10880 1030
-F 0 "#PWR013" H 10880 780 50  0001 C CNN
-F 1 "GND" H 10885 857 50  0000 C CNN
-F 2 "" H 10880 1030 50  0001 C CNN
-F 3 "" H 10880 1030 50  0001 C CNN
-	1    10880 1030
+P 9080 1150
+F 0 "#PWR013" H 9080 900 50  0001 C CNN
+F 1 "GND" H 9085 977 50  0000 C CNN
+F 2 "" H 9080 1150 50  0001 C CNN
+F 3 "" H 9080 1150 50  0001 C CNN
+	1    9080 1150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C18
 U 1 1 61649FAE
-P 10670 1030
-F 0 "C18" V 10785 1076 50  0000 L CNN
-F 1 "1uF" V 10785 905 50  0000 L CNN
-F 2 "" H 10708 880 50  0001 C CNN
-F 3 "~" H 10670 1030 50  0001 C CNN
-	1    10670 1030
+P 8870 1150
+F 0 "C18" V 8985 1196 50  0000 L CNN
+F 1 "1uF" V 8985 1025 50  0000 L CNN
+F 2 "" H 8908 1000 50  0001 C CNN
+F 3 "~" H 8870 1150 50  0001 C CNN
+	1    8870 1150
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	10430 1030 10520 1030
+	8630 1150 8720 1150
 Wire Wire Line
-	9480 1010 9540 1010
+	7680 1130 7740 1130
 $Comp
 L power:GND #PWR010
 U 1 1 6163C464
-P 9540 1010
-F 0 "#PWR010" H 9540 760 50  0001 C CNN
-F 1 "GND" H 9545 837 50  0000 C CNN
-F 2 "" H 9540 1010 50  0001 C CNN
-F 3 "" H 9540 1010 50  0001 C CNN
-	1    9540 1010
+P 7740 1130
+F 0 "#PWR010" H 7740 880 50  0001 C CNN
+F 1 "GND" H 7745 957 50  0000 C CNN
+F 2 "" H 7740 1130 50  0001 C CNN
+F 3 "" H 7740 1130 50  0001 C CNN
+	1    7740 1130
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C17
 U 1 1 6163C45E
-P 9330 1010
-F 0 "C17" V 9445 1056 50  0000 L CNN
-F 1 "1uF" V 9445 885 50  0000 L CNN
-F 2 "" H 9368 860 50  0001 C CNN
-F 3 "~" H 9330 1010 50  0001 C CNN
-	1    9330 1010
+P 7530 1130
+F 0 "C17" V 7645 1176 50  0000 L CNN
+F 1 "1uF" V 7645 1005 50  0000 L CNN
+F 2 "" H 7568 980 50  0001 C CNN
+F 3 "~" H 7530 1130 50  0001 C CNN
+	1    7530 1130
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	9090 1010 9180 1010
+	7290 1130 7380 1130
 Wire Wire Line
-	8240 1010 8300 1010
+	6440 1130 6500 1130
 $Comp
 L power:GND #PWR07
 U 1 1 6162F8AC
-P 8300 1010
-F 0 "#PWR07" H 8300 760 50  0001 C CNN
-F 1 "GND" H 8305 837 50  0000 C CNN
-F 2 "" H 8300 1010 50  0001 C CNN
-F 3 "" H 8300 1010 50  0001 C CNN
-	1    8300 1010
+P 6500 1130
+F 0 "#PWR07" H 6500 880 50  0001 C CNN
+F 1 "GND" H 6505 957 50  0000 C CNN
+F 2 "" H 6500 1130 50  0001 C CNN
+F 3 "" H 6500 1130 50  0001 C CNN
+	1    6500 1130
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C12
 U 1 1 6162F8A6
-P 8090 1010
-F 0 "C12" V 8205 1056 50  0000 L CNN
-F 1 "1uF" V 8205 885 50  0000 L CNN
-F 2 "" H 8128 860 50  0001 C CNN
-F 3 "~" H 8090 1010 50  0001 C CNN
-	1    8090 1010
+P 6290 1130
+F 0 "C12" V 6405 1176 50  0000 L CNN
+F 1 "1uF" V 6405 1005 50  0000 L CNN
+F 2 "" H 6328 980 50  0001 C CNN
+F 3 "~" H 6290 1130 50  0001 C CNN
+	1    6290 1130
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7850 1010 7940 1010
-Connection ~ 7845 4435
-Text Label 10320 4555 2    50   ~ 0
-SLC
+	6050 1130 6140 1130
 Wire Wire Line
-	10405 4555 10320 4555
+	6050 4660 5965 4660
 Wire Wire Line
-	10405 4455 10405 4555
-Text Label 9025 4570 2    50   ~ 0
-SLB
+	6050 4565 6050 4660
 Wire Wire Line
-	9110 4570 9025 4570
+	8430 2975 8430 2750
 Wire Wire Line
-	9110 4470 9110 4570
-Text Label 7760 4535 2    50   ~ 0
-SLA
+	7090 2990 7090 2730
+Connection ~ 5750 1130
+Connection ~ 5850 2965
 Wire Wire Line
-	7845 4535 7760 4535
+	5750 4565 5675 4565
 Wire Wire Line
-	7845 4435 7845 4535
-Text Label 8985 5535 0    50   ~ 0
-PVDD
-$Comp
-L Device:C C16
-U 1 1 61380548
-P 9305 5535
-F 0 "C16" V 9250 5675 50  0000 C CNN
-F 1 "10uF" V 9355 5680 50  0000 C CNN
-F 2 "" H 9343 5385 50  0001 C CNN
-F 3 "~" H 9305 5535 50  0001 C CNN
-	1    9305 5535
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR011
-U 1 1 613781AD
-P 9605 5535
-F 0 "#PWR011" H 9605 5285 50  0001 C CNN
-F 1 "GND" V 9610 5407 50  0000 R CNN
-F 2 "" H 9605 5535 50  0001 C CNN
-F 3 "" H 9605 5535 50  0001 C CNN
-	1    9605 5535
-	0    -1   -1   0   
-$EndComp
+	5950 1130 6050 1130
+Connection ~ 5950 1130
 Wire Wire Line
-	9455 5535 9605 5535
+	5850 1130 5950 1130
+Connection ~ 5850 1130
+Connection ~ 6050 1130
 Wire Wire Line
-	8985 5535 9155 5535
-$Comp
-L power:GND #PWR08
-U 1 1 6124DF7B
-P 9280 5360
-F 0 "#PWR08" H 9280 5110 50  0001 C CNN
-F 1 "GND" V 9285 5232 50  0000 R CNN
-F 2 "" H 9280 5360 50  0001 C CNN
-F 3 "" H 9280 5360 50  0001 C CNN
-	1    9280 5360
-	0    -1   -1   0   
-$EndComp
+	6050 1130 6050 1135
 Wire Wire Line
-	9170 5360 9280 5360
-Text Label 9170 5360 2    50   ~ 0
-GND
-Text Label 10035 4455 2    50   ~ 0
-GLC
-Text Label 8740 4470 2    50   ~ 0
-GLB
-Text Label 7475 4435 2    50   ~ 0
-GLA
-Text Label 10030 2855 2    50   ~ 0
-SHC
-Text Label 10060 2630 2    50   ~ 0
-GHC
-Text Label 8710 2870 2    50   ~ 0
-SHB
-Text Label 8720 2610 2    50   ~ 0
-GHB
-Text Label 7455 2835 2    50   ~ 0
-SHA
-Text Label 7480 2610 2    50   ~ 0
-GHA
-Connection ~ 10105 2855
+	5750 1130 5850 1130
+Connection ~ 7090 2990
+Connection ~ 7290 1130
 Wire Wire Line
-	10105 2855 10030 2855
-Connection ~ 8810 2870
+	7290 1130 7290 1135
+Connection ~ 8630 1150
 Wire Wire Line
-	8810 2870 8710 2870
-Connection ~ 7545 2835
-Wire Wire Line
-	7545 2835 7455 2835
-Connection ~ 10230 2630
-Wire Wire Line
-	10205 2630 10230 2630
-Wire Wire Line
-	10205 2855 10205 2630
-Wire Wire Line
-	10230 2630 10330 2630
-Connection ~ 8990 2610
-Connection ~ 8910 2610
-Wire Wire Line
-	8910 2610 8990 2610
-Wire Wire Line
-	8910 2610 8890 2610
-Wire Wire Line
-	8910 2870 8910 2610
-Wire Wire Line
-	8910 2870 9010 2870
-Wire Wire Line
-	7750 2610 7850 2610
-Connection ~ 7750 2610
-Connection ~ 7650 2610
-Wire Wire Line
-	7650 2610 7750 2610
-Wire Wire Line
-	7645 2610 7650 2610
-Wire Wire Line
-	7645 2835 7645 2610
-Wire Wire Line
-	7745 2835 7845 2835
-Connection ~ 7745 2835
-Wire Wire Line
-	7645 2835 7745 2835
-Wire Wire Line
-	10305 2855 10405 2855
-Connection ~ 10130 1030
-Wire Wire Line
-	10075 1030 10130 1030
-Connection ~ 8790 1010
-Wire Wire Line
-	8735 1010 8790 1010
-Text Label 10075 1030 2    50   ~ 0
-PVDD
-Text Label 8735 1010 2    50   ~ 0
-PVDD
-Connection ~ 7550 1010
-Wire Wire Line
-	7550 1010 7510 1010
-Text Label 7510 1010 2    50   ~ 0
-PVDD
-Connection ~ 7645 2835
-Connection ~ 7845 2835
-Wire Wire Line
-	7845 2835 7845 2840
-Wire Wire Line
-	7545 2835 7645 2835
-Wire Wire Line
-	7545 4435 7475 4435
-Connection ~ 7745 4435
-Wire Wire Line
-	7845 4435 7745 4435
-Wire Wire Line
-	7645 4435 7745 4435
-$Comp
-L BSC022N04LS6ATMA1:BSC022N04LS6ATMA1 U2
-U 1 1 610C2C29
-P 7845 4435
-F 0 "U2" V 8698 4663 60  0000 L CNN
-F 1 "BSC022N04LS6ATMA1" H 8160 4575 60  0000 L CNN
-F 2 "PG-TDSON-8-6_INF" H 8645 4675 60  0001 C CNN
-F 3 "" H 7845 4435 60  0000 C CNN
-	1    7845 4435
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	7750 1010 7850 1010
-Connection ~ 7750 1010
-Wire Wire Line
-	7650 1010 7750 1010
-Connection ~ 7650 1010
-Connection ~ 7850 1010
-Wire Wire Line
-	7850 1010 7850 1015
-Wire Wire Line
-	7550 1010 7650 1010
-Wire Wire Line
-	7550 2610 7480 2610
-$Comp
-L BSC022N04LS6ATMA1:BSC022N04LS6ATMA1 U3
-U 1 1 610C0CBA
-P 7850 2610
-F 0 "U3" V 8703 2838 60  0000 L CNN
-F 1 "BSC022N04LS6ATMA1" H 8170 2740 60  0000 L CNN
-F 2 "PG-TDSON-8-6_INF" H 8650 2850 60  0001 C CNN
-F 3 "" H 7850 2610 60  0000 C CNN
-	1    7850 2610
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	9010 2870 9110 2870
-Connection ~ 9010 2870
-Connection ~ 8910 2870
-Connection ~ 9110 2870
-Wire Wire Line
-	9110 2870 9110 2875
-Wire Wire Line
-	8810 2870 8910 2870
-Wire Wire Line
-	8810 4470 8740 4470
-Connection ~ 9010 4470
-Wire Wire Line
-	9110 4470 9010 4470
-Wire Wire Line
-	8910 4470 9010 4470
-$Comp
-L BSC022N04LS6ATMA1:BSC022N04LS6ATMA1 U5
-U 1 1 610BDDB8
-P 9110 4470
-F 0 "U5" V 9963 4698 60  0000 L CNN
-F 1 "BSC022N04LS6ATMA1" H 9445 4620 60  0000 L CNN
-F 2 "PG-TDSON-8-6_INF" H 9910 4710 60  0001 C CNN
-F 3 "" H 9110 4470 60  0000 C CNN
-	1    9110 4470
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	8990 1010 9090 1010
-Connection ~ 8990 1010
-Wire Wire Line
-	8890 1010 8990 1010
-Connection ~ 8890 1010
-Connection ~ 9090 1010
-Wire Wire Line
-	9090 1010 9090 1015
-Wire Wire Line
-	8790 1010 8890 1010
-Wire Wire Line
-	8790 2610 8720 2610
-Wire Wire Line
-	9090 2610 8990 2610
-$Comp
-L BSC022N04LS6ATMA1:BSC022N04LS6ATMA1 U4
-U 1 1 610BC47D
-P 9090 2610
-F 0 "U4" V 9943 2838 60  0000 L CNN
-F 1 "BSC022N04LS6ATMA1" H 9415 2760 60  0000 L CNN
-F 2 "PG-TDSON-8-6_INF" H 9890 2850 60  0001 C CNN
-F 3 "" H 9090 2610 60  0000 C CNN
-	1    9090 2610
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	10330 1030 10430 1030
-Connection ~ 10330 1030
-Wire Wire Line
-	10230 1030 10330 1030
-Connection ~ 10230 1030
-Connection ~ 10430 1030
-Wire Wire Line
-	10430 1030 10430 1035
-Wire Wire Line
-	10130 1030 10230 1030
-Wire Wire Line
-	10130 2630 10060 2630
-Connection ~ 10330 2630
-Wire Wire Line
-	10430 2630 10330 2630
-$Comp
-L BSC022N04LS6ATMA1:BSC022N04LS6ATMA1 U7
-U 1 1 610B8FE7
-P 10430 2630
-F 0 "U7" V 11283 2858 60  0000 L CNN
-F 1 "BSC022N04LS6ATMA1" H 10765 2760 60  0000 L CNN
-F 2 "PG-TDSON-8-6_INF" H 11230 2870 60  0001 C CNN
-F 3 "" H 10430 2630 60  0000 C CNN
-	1    10430 2630
-	0    1    -1   0   
-$EndComp
-Connection ~ 10305 2855
-Wire Wire Line
-	10205 2855 10305 2855
-Connection ~ 10205 2855
-Connection ~ 10405 2855
-Wire Wire Line
-	10405 2855 10405 2860
-Wire Wire Line
-	10105 2855 10205 2855
-Wire Wire Line
-	10105 4455 10035 4455
-Connection ~ 10305 4455
-Wire Wire Line
-	10405 4455 10305 4455
-Wire Wire Line
-	10205 4455 10305 4455
-$Comp
-L BSC022N04LS6ATMA1:BSC022N04LS6ATMA1 U6
-U 1 1 610A231B
-P 10405 4455
-F 0 "U6" V 11258 4683 60  0000 L CNN
-F 1 "BSC022N04LS6ATMA1" H 10735 4595 60  0000 L CNN
-F 2 "PG-TDSON-8-6_INF" H 11205 4695 60  0001 C CNN
-F 3 "" H 10405 4455 60  0000 C CNN
-	1    10405 4455
-	0    1    -1   0   
-$EndComp
+	8630 1150 8630 1155
 Text Notes 3995 1840 0    59   ~ 0
 Decoupling caps, \nkeep close to\npower pins\n
-Wire Notes Line width 20
-	5155 505  5155 11210
-Wire Notes Line width 20
-	485  5150 5155 5150
 Wire Notes Line width 10
 	2970 4060 5155 4060
 Wire Notes Line width 10
@@ -1471,10 +660,6 @@ Wire Wire Line
 	3575 8480 3980 8480
 Text GLabel 4550 8480 2    39   Input ~ 0
 POWER_IN
-Text GLabel 5745 8485 0    39   Input ~ 0
-POWER_IN
-Wire Wire Line
-	5745 8485 7050 8485
 Wire Wire Line
 	3980 8655 3980 8480
 $Comp
@@ -1516,8 +701,6 @@ F 3 "" H 1615 9335 50  0001 C CNN
 	1    1615 9335
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1615 8970 1615 8880
 Wire Wire Line
 	3980 8480 4550 8480
 Connection ~ 3980 8480
@@ -1563,14 +746,14 @@ Wire Wire Line
 	2575 8480 1615 8480
 Wire Wire Line
 	1615 8480 1615 8880
-Text Notes 3955 7895 0    59   ~ 0
+Text Notes 1585 9995 0    59   ~ 0
 Keep Bypass Capacitors\n close to Chip
-Text Notes 655  7870 0    59   ~ 0
+Text Notes 1490 8395 0    59   ~ 0
 Keep Inductor away \nfrom Feedback Route
 Text Notes 3615 9825 0    59   ~ 0
 SS - Soft Start\nConnect Capacitor for soft start
-Text Notes 3635 10060 0    59   ~ 0
-Pull ON/~OFF~ High\nTo enable Switching
+Text Notes 3640 10265 0    59   ~ 0
+Pull ON/~OFF~ High\nTo enable Switching\nNC - Internal Default \nPull Up
 $Comp
 L Device:D_Schottky D1
 U 1 1 613262EF
@@ -1582,28 +765,835 @@ F 3 "~" H 2370 9105 50  0001 C CNN
 	1    2370 9105
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	1615 9270 1615 9335
+Wire Notes Line width 20
+	5155 505  5155 11210
+Wire Notes Line width 20
+	485  5150 9380 5150
+Wire Notes Line width 20
+	9380 490  9380 11195
+Text Notes 9630 865  0    157  ~ 31
+DRV8305 - Gate Driver
 $Comp
-L Device:CP1 C26
-U 1 1 6141F4E4
+L Device:C C3
+U 1 1 6135FBF8
+P 15565 4240
+F 0 "C3" H 15405 4230 50  0000 C CNN
+F 1 " 1uF 6.3V" H 15400 4335 50  0000 C CNN
+F 2 "" H 15603 4090 50  0001 C CNN
+F 3 "~" H 15565 4240 50  0001 C CNN
+	1    15565 4240
+	-1   0    0    1   
+$EndComp
+Text Notes 12625 3495 0    39   ~ 0
+SO1, SO2 and SO3 are \ncurrent amplifier output pins\n
+Text Notes 12635 3730 0    39   ~ 0
+SP1, SP2 and SP3 are \npositive current sense input pins\nfor amplifers 1,2 and 3 respectively\n
+Text Notes 12635 3965 0    39   ~ 0
+SNP1, SN2 and SN3 are\nnegative current sense input pins\nfor amplifers 1,2 and 3 respectively\n
+Text Notes 13345 765  0    39   ~ 0
+VCPH - High Side Gate Driver regulator\nVCP_LSD - Low SIde Gate Driver regulator
+Text GLabel 11465 1435 1    39   Input ~ 0
+DRV_HG_reg
+Text GLabel 11565 1435 1    39   Input ~ 0
+DRV_LG_reg
+Text GLabel 11165 1435 1    39   Input ~ 0
+PVDD
+Text GLabel 13620 1685 3    39   Input ~ 0
+PVDD
+Text GLabel 13620 1265 1    39   Input ~ 0
+DRV_HG_reg
+Text GLabel 14205 1265 1    39   Input ~ 0
+DRV_LG_reg
+$Comp
+L power:GND #PWR?
+U 1 1 61596AC8
+P 14205 1705
+F 0 "#PWR?" H 14205 1455 50  0001 C CNN
+F 1 "GND" H 14210 1532 50  0000 C CNN
+F 2 "" H 14205 1705 50  0001 C CNN
+F 3 "" H 14205 1705 50  0001 C CNN
+	1    14205 1705
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13620 1265 13620 1335
+Wire Wire Line
+	13620 1635 13620 1685
+Wire Wire Line
+	14205 1635 14205 1705
+Wire Wire Line
+	14205 1335 14205 1265
+Text GLabel 11365 1435 1    39   Input ~ 0
+CP2H
+Text GLabel 11265 1435 1    39   Input ~ 0
+CP2L
+Text GLabel 14995 1055 1    39   Input ~ 0
+CP1H
+Text GLabel 14995 1470 3    39   Input ~ 0
+CP1L
+Text GLabel 10965 1435 1    39   Input ~ 0
+CP1H
+Text GLabel 11065 1435 1    39   Input ~ 0
+CP1L
+Wire Wire Line
+	11565 1625 11565 1435
+Wire Wire Line
+	11465 1625 11465 1435
+Wire Wire Line
+	11365 1625 11365 1435
+Wire Wire Line
+	11265 1625 11265 1435
+Wire Wire Line
+	11165 1625 11165 1435
+Wire Wire Line
+	10465 1625 10465 1435
+Wire Wire Line
+	10765 1625 10765 1435
+Wire Wire Line
+	11065 1625 11065 1435
+Wire Wire Line
+	10965 1625 10965 1435
+$Comp
+L Device:C C?
+U 1 1 6191E71A
+P 14995 1260
+F 0 "C?" H 15110 1306 50  0000 L CNN
+F 1 "0.047uF" H 15110 1215 50  0000 L CNN
+F 2 "" H 15033 1110 50  0001 C CNN
+F 3 "~" H 14995 1260 50  0001 C CNN
+	1    14995 1260
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14995 1055 14995 1110
+Wire Wire Line
+	14995 1410 14995 1470
+Text GLabel 15525 1050 1    39   Input ~ 0
+CP2H
+Text GLabel 15525 1465 3    39   Input ~ 0
+CP2L
+$Comp
+L Device:C C?
+U 1 1 6198BEA1
+P 15525 1255
+F 0 "C?" H 15640 1301 50  0000 L CNN
+F 1 "0.047uF" H 15640 1210 50  0000 L CNN
+F 2 "" H 15563 1105 50  0001 C CNN
+F 3 "~" H 15525 1255 50  0001 C CNN
+	1    15525 1255
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15525 1050 15525 1105
+Wire Wire Line
+	15525 1405 15525 1465
+Text Notes 14955 795  0    39   ~ 0
+Flying capacitors for \ncharge pumps with rating :\nPVDD for CP1\nPVDD*2 for CP2
+$Comp
+L power:GND #PWR?
+U 1 1 61A45317
+P 10765 1435
+F 0 "#PWR?" H 10765 1185 50  0001 C CNN
+F 1 "GND" H 10770 1262 50  0000 C CNN
+F 2 "" H 10765 1435 50  0001 C CNN
+F 3 "" H 10765 1435 50  0001 C CNN
+	1    10765 1435
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61A6629F
 P 3980 8805
-F 0 "C26" H 4095 8851 50  0000 L CNN
-F 1 "100uF 50V" H 4095 8760 50  0000 L CNN
-F 2 "" H 3980 8805 50  0001 C CNN
+F 0 "C?" H 4095 8851 50  0000 L CNN
+F 1 "100uF 100V" H 4095 8760 50  0000 L CNN
+F 2 "" H 4018 8655 50  0001 C CNN
 F 3 "~" H 3980 8805 50  0001 C CNN
 	1    3980 8805
 	1    0    0    -1  
 $EndComp
+Text Notes 2225 9695 0    39   ~ 0
+do2014ac footprint
 $Comp
-L Device:CP1 C24
-U 1 1 614AC597
+L Device:C C?
+U 1 1 61A8BF16
 P 1615 9120
-F 0 "C24" H 1730 9166 50  0000 L CNN
+F 0 "C?" H 1730 9166 50  0000 L CNN
 F 1 "68uF 10V" H 1730 9075 50  0000 L CNN
-F 2 "" H 1615 9120 50  0001 C CNN
+F 2 "" H 1653 8970 50  0001 C CNN
 F 3 "~" H 1615 9120 50  0001 C CNN
 	1    1615 9120
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1615 9270 1615 9335
+	1615 8880 1615 8970
+$Comp
+L Device:R R2
+U 1 1 614CBA09
+P 14845 4155
+F 0 "R2" H 14910 4220 50  0000 L CNN
+F 1 "100" H 14910 4120 50  0000 L CNN
+F 2 "" V 14775 4155 50  0001 C CNN
+F 3 "~" H 14845 4155 50  0001 C CNN
+	1    14845 4155
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 613CB388
+P 14290 2335
+F 0 "#PWR?" H 14290 2185 50  0001 C CNN
+F 1 "+3V3" H 14305 2508 50  0000 C CNN
+F 2 "" H 14290 2335 50  0001 C CNN
+F 3 "" H 14290 2335 50  0001 C CNN
+	1    14290 2335
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 613CEC5C
+P 14290 2910
+F 0 "#PWR?" H 14290 2660 50  0001 C CNN
+F 1 "GND" H 14295 2737 50  0000 C CNN
+F 2 "" H 14290 2910 50  0001 C CNN
+F 3 "" H 14290 2910 50  0001 C CNN
+	1    14290 2910
+	1    0    0    -1  
+$EndComp
+Text GLabel 10665 4415 3    39   Input ~ 0
+DRV_AVDD
+Text GLabel 10465 1435 1    39   Input ~ 0
+DRV_VREG
+Text GLabel 14970 2450 1    39   Input ~ 0
+DRV_DVDD
+Text GLabel 14140 2410 0    39   Input ~ 0
+DRV_VREG
+Wire Wire Line
+	10665 1625 10665 1445
+Text GLabel 10665 1445 1    39   Input ~ 0
+DRV_DVDD
+$Comp
+L DRV8305NPHPR:DRV8305NPHPR IC1
+U 1 1 61052D6F
+P 10165 2425
+F 0 "IC1" H 10970 2085 50  0000 L CNN
+F 1 "DRV8305NPHPR" H 10750 1840 50  0000 L CNN
+F 2 "QFP50P900X900X120-48N" H 11715 3025 50  0001 L CNN
+F 3 "http://www.mouser.com/ds/2/405/drv8305-768621.pdf" H 11715 2925 50  0001 L CNN
+F 4 "Motor / Motion / Ignition Controllers & Drivers Three Phase Gate Driver with Three Integrated Current Shunt Amplifiers 48-HTQFP -40 to 125" H 11715 2825 50  0001 L CNN "Description"
+F 5 "1.2" H 11715 2725 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 11715 2625 50  0001 L CNN "Manufacturer_Name"
+F 7 "DRV8305NPHPR" H 11715 2525 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "595-DRV8305NPHPR" H 11715 2425 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/DRV8305NPHPR?qs=kFLL9AfgRSDaehWhXenR2Q%3D%3D" H 11715 2325 50  0001 L CNN "Mouser Price/Stock"
+F 10 "DRV8305NPHPR" H 11715 2225 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/drv8305nphpr/texas-instruments" H 11715 2125 50  0001 L CNN "Arrow Price/Stock"
+	1    10165 2425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10565 4225 10565 4285
+$Comp
+L power:GND #PWR?
+U 1 1 615B2683
+P 14970 2970
+F 0 "#PWR?" H 14970 2720 50  0001 C CNN
+F 1 "GND" H 14975 2797 50  0000 C CNN
+F 2 "" H 14970 2970 50  0001 C CNN
+F 3 "" H 14970 2970 50  0001 C CNN
+	1    14970 2970
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14290 2335 14290 2410
+Wire Wire Line
+	14140 2410 14290 2410
+Connection ~ 14290 2410
+Wire Wire Line
+	14290 2410 14290 2480
+Wire Wire Line
+	14290 2780 14290 2910
+Wire Wire Line
+	14970 2970 14970 2835
+Wire Wire Line
+	14970 2450 14970 2535
+Text Notes 15085 2240 0    39   ~ 0
+DRV_DVDD: 3.3V internal digital\nsupply regulator
+Text Notes 12685 2855 0    39   ~ 0
+Connect with-> 3.3V or 5V, 50-mA LDO; \n                       connect 1-µF to GND\nConnect with->  Reference voltage; LDO disabled
+Text GLabel 14845 3910 1    39   Input ~ 0
+VDRAIN
+Text GLabel 12840 1255 1    39   Input ~ 0
+PVDD
+$Comp
+L Device:C C?
+U 1 1 6169BF2D
+P 12840 1470
+F 0 "C?" H 12670 1475 50  0000 C CNN
+F 1 "4.7uF Ceramic" H 12560 1575 50  0000 C CNN
+F 2 "" H 12878 1320 50  0001 C CNN
+F 3 "~" H 12840 1470 50  0001 C CNN
+	1    12840 1470
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6169BF33
+P 12840 1750
+F 0 "#PWR?" H 12840 1500 50  0001 C CNN
+F 1 "GND" H 12845 1577 50  0000 C CNN
+F 2 "" H 12840 1750 50  0001 C CNN
+F 3 "" H 12840 1750 50  0001 C CNN
+	1    12840 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12840 1620 12840 1750
+Wire Wire Line
+	12840 1255 12840 1320
+Wire Wire Line
+	10865 1625 10865 1435
+Text GLabel 10865 1435 1    39   Input ~ 0
+VDRAIN
+Text GLabel 14845 4370 3    39   Input ~ 0
+PVDD
+Wire Wire Line
+	14845 4305 14845 4370
+Wire Wire Line
+	14845 3910 14845 4005
+Text GLabel 6935 1130 0    39   Input ~ 0
+PVDD
+Text GLabel 8275 1150 0    39   Input ~ 0
+PVDD
+Wire Wire Line
+	10665 4415 10665 4225
+Text GLabel 15565 3970 1    39   Input ~ 0
+DRV_AVDD
+Wire Wire Line
+	15565 3970 15565 4090
+NoConn ~ 10565 1625
+Text GLabel 11465 4415 3    39   Input ~ 0
+SN1
+Text GLabel 13165 4815 3    39   Input ~ 0
+SN2
+Text GLabel 11265 4415 3    39   Input ~ 0
+SN2
+Text GLabel 11065 4415 3    39   Input ~ 0
+SN3
+Text GLabel 13470 4810 3    39   Input ~ 0
+SN3
+Text GLabel 11565 4415 3    39   Input ~ 0
+SP1
+Text GLabel 11365 4415 3    39   Input ~ 0
+SP2
+Text GLabel 11165 4415 3    39   Input ~ 0
+SP3
+Text GLabel 10765 4415 3    39   Input ~ 0
+SO1
+Text GLabel 10865 4415 3    39   Input ~ 0
+SO2
+Text GLabel 10965 4415 3    39   Input ~ 0
+SO3
+Text GLabel 12880 4805 3    39   Input ~ 0
+SN1
+Wire Wire Line
+	10865 4415 10865 4225
+Wire Wire Line
+	10765 4415 10765 4225
+Wire Wire Line
+	10965 4415 10965 4225
+Wire Wire Line
+	11065 4415 11065 4225
+Wire Wire Line
+	11265 4415 11265 4225
+Wire Wire Line
+	11165 4415 11165 4225
+Wire Wire Line
+	11365 4415 11365 4225
+Wire Wire Line
+	11465 4415 11465 4225
+Wire Wire Line
+	11565 4415 11565 4225
+Wire Wire Line
+	12880 4685 12880 4805
+Wire Wire Line
+	13165 4695 13165 4815
+Wire Wire Line
+	13470 4690 13470 4810
+Text GLabel 12055 2425 2    39   Input ~ 0
+GHA
+Text GLabel 12055 2525 2    39   Input ~ 0
+SHA
+Text GLabel 12055 2625 2    39   Input ~ 0
+SLA
+Text GLabel 12055 2725 2    39   Input ~ 0
+GLA
+Wire Wire Line
+	12055 2725 11865 2725
+Wire Wire Line
+	12055 2525 11865 2525
+Wire Wire Line
+	12055 2625 11865 2625
+Wire Wire Line
+	12055 2425 11865 2425
+Text GLabel 12055 2825 2    39   Input ~ 0
+GHB
+Text GLabel 12055 2925 2    39   Input ~ 0
+SHB
+Text GLabel 12055 3025 2    39   Input ~ 0
+SLB
+Text GLabel 12055 3125 2    39   Input ~ 0
+GLB
+Wire Wire Line
+	12055 3125 11865 3125
+Wire Wire Line
+	12055 2925 11865 2925
+Wire Wire Line
+	12055 3025 11865 3025
+Wire Wire Line
+	12055 2825 11865 2825
+Text GLabel 12055 3225 2    39   Input ~ 0
+GHC
+Text GLabel 12055 3325 2    39   Input ~ 0
+SHC
+Text GLabel 12055 3425 2    39   Input ~ 0
+SLC
+Text GLabel 12055 3525 2    39   Input ~ 0
+GLC
+Wire Wire Line
+	12055 3525 11865 3525
+Wire Wire Line
+	12055 3325 11865 3325
+Wire Wire Line
+	12055 3425 11865 3425
+Wire Wire Line
+	12055 3225 11865 3225
+Text GLabel 6110 2730 2    39   Input ~ 0
+GHA
+Text GLabel 5665 2965 0    39   Input ~ 0
+SHA
+Text GLabel 5965 4660 0    39   Input ~ 0
+SLA
+Text GLabel 5675 4565 0    39   Input ~ 0
+GLA
+Wire Wire Line
+	5750 1130 5710 1130
+Text GLabel 5710 1130 0    39   Input ~ 0
+PVDD
+Text GLabel 7350 2730 2    39   Input ~ 0
+GHB
+Text GLabel 6890 2990 0    39   Input ~ 0
+SHB
+Text GLabel 8695 2750 2    39   Input ~ 0
+GHC
+Text GLabel 8255 2975 0    39   Input ~ 0
+SHC
+Text GLabel 9975 3525 0    39   Input ~ 0
+DRV_SPI_CLK
+Text GLabel 9975 3425 0    39   Input ~ 0
+DRV_SPI_MISO
+Text GLabel 9975 3325 0    39   Input ~ 0
+DRV_SPI_MOSI
+Text GLabel 9975 3225 0    39   Input ~ 0
+DRV_SPI_nSCS
+Wire Wire Line
+	9975 3225 10165 3225
+Wire Wire Line
+	9975 3425 10165 3425
+Wire Wire Line
+	9975 3325 10165 3325
+Wire Wire Line
+	9975 3525 10165 3525
+Text GLabel 9975 3125 0    39   Input ~ 0
+DRV_nFAULT
+Text GLabel 9975 3025 0    39   Input ~ 0
+DRV_LC
+Text GLabel 9975 2925 0    39   Input ~ 0
+DRV_HC
+Text GLabel 9975 2825 0    39   Input ~ 0
+DRV_LB
+Wire Wire Line
+	9975 2825 10165 2825
+Wire Wire Line
+	9975 3025 10165 3025
+Wire Wire Line
+	9975 2925 10165 2925
+Wire Wire Line
+	9975 3125 10165 3125
+Text GLabel 9975 2725 0    39   Input ~ 0
+DRV_HB
+Text GLabel 9975 2625 0    39   Input ~ 0
+DRV_LA
+Text GLabel 9975 2525 0    39   Input ~ 0
+DRV_HA
+Text GLabel 9975 2425 0    39   Input ~ 0
+DRV_EN_GATE
+Wire Wire Line
+	9975 2425 10165 2425
+Wire Wire Line
+	9975 2625 10165 2625
+Wire Wire Line
+	9975 2525 10165 2525
+Wire Wire Line
+	9975 2725 10165 2725
+Wire Notes Line width 20
+	9395 5145 16085 5145
+Wire Notes Line
+	16070 5145 16070 5150
+Wire Notes Line
+	16060 2040 16060 2025
+Wire Notes Line
+	13255 495  13255 2045
+Wire Notes Line
+	12560 480  12560 2040
+Wire Notes Line
+	12380 5145 12375 5145
+Wire Notes Line
+	12560 2045 12560 5130
+Wire Notes Line
+	15205 3270 15205 5140
+Wire Notes Line
+	15205 5140 15200 5140
+Text Notes 12635 755  0    39   ~ 0
+Power Bypass \nCapacitor
+Text GLabel 2450 2295 2    39   Input ~ 0
+DRV_SPI_CLK
+Text GLabel 2450 2095 2    39   Input ~ 0
+DRV_SPI_MISO
+Text GLabel 2450 2195 2    39   Input ~ 0
+DRV_SPI_MOSI
+Text GLabel 2450 2395 2    39   Input ~ 0
+DRV_SPI_nSCS
+Wire Wire Line
+	2450 2395 2260 2395
+Wire Wire Line
+	2450 2095 2260 2095
+Wire Wire Line
+	2450 2195 2260 2195
+Wire Wire Line
+	2450 2295 2260 2295
+Text GLabel 2450 2795 2    39   Input ~ 0
+DRV_nFAULT
+Text GLabel 2450 2895 2    39   Input ~ 0
+DRV_LC
+Text GLabel 2450 2995 2    39   Input ~ 0
+DRV_HC
+Text GLabel 2450 3095 2    39   Input ~ 0
+DRV_LB
+Wire Wire Line
+	2450 3095 2260 3095
+Wire Wire Line
+	2450 2895 2260 2895
+Wire Wire Line
+	2450 2995 2260 2995
+Wire Wire Line
+	2450 2795 2260 2795
+Text GLabel 2450 3195 2    39   Input ~ 0
+DRV_HB
+Text GLabel 2450 3295 2    39   Input ~ 0
+DRV_LA
+Text GLabel 2450 3395 2    39   Input ~ 0
+DRV_HA
+Text GLabel 2450 3495 2    39   Input ~ 0
+DRV_EN_GATE
+Wire Wire Line
+	2450 3495 2260 3495
+Wire Wire Line
+	2450 3295 2260 3295
+Wire Wire Line
+	2450 3395 2260 3395
+Wire Wire Line
+	2450 3195 2260 3195
+Text GLabel 14005 3875 1    39   Input ~ 0
+3V3_IN
+Text GLabel 14260 3880 1    39   Input ~ 0
+3V3_IN
+$Comp
+L Device:R R?
+U 1 1 623A6BA6
+P 14005 4085
+F 0 "R?" H 14075 4131 50  0000 L CNN
+F 1 "10k" H 14065 4040 50  0000 L CNN
+F 2 "" V 13935 4085 50  0001 C CNN
+F 3 "~" H 14005 4085 50  0001 C CNN
+	1    14005 4085
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 623A8C63
+P 14260 4090
+F 0 "R?" H 14330 4136 50  0000 L CNN
+F 1 "10k" H 14320 4045 50  0000 L CNN
+F 2 "" V 14190 4090 50  0001 C CNN
+F 3 "~" H 14260 4090 50  0001 C CNN
+	1    14260 4090
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10465 4415 10465 4225
+Wire Wire Line
+	14005 3875 14005 3935
+Wire Wire Line
+	14260 3880 14260 3940
+Text GLabel 10465 4415 3    39   Input ~ 0
+PWR_GD
+Text GLabel 14260 4240 3    39   Input ~ 0
+PWR_GD
+Text GLabel 14005 4235 3    39   Input ~ 0
+DRV_nFAULT
+Wire Notes Line
+	13770 3280 13770 5150
+Wire Notes Line
+	13675 5145 13680 5145
+Wire Notes Line
+	14540 3275 14540 5150
+Wire Notes Line
+	14540 5150 14555 5150
+Text Notes 13920 5050 0    39   ~ 0
+PWRGD: Power Good\nDRV_VREG and MCU \nwatchdog  fault \nindication
+Text Notes 13820 3495 0    39   ~ 0
+DRV_nFAULT: Fault\nIndicator
+Text Notes 15220 3495 0    39   ~ 0
+5-V internal analog supply \nregulator bypass capacitor
+Text Notes 14580 3485 0    39   ~ 0
+High Side MOSFET\nDrain
+Wire Wire Line
+	13470 4270 13470 4390
+Wire Wire Line
+	13165 4275 13165 4395
+Wire Wire Line
+	12880 4265 12880 4385
+Text GLabel 13470 4270 1    39   Input ~ 0
+SP3
+Text GLabel 13165 4275 1    39   Input ~ 0
+SP2
+Text GLabel 12880 4265 1    39   Input ~ 0
+SP1
+$Comp
+L Device:C C8
+U 1 1 6132F188
+P 13470 4540
+F 0 "C8" H 13470 4615 50  0000 L CNN
+F 1 "1nF" H 13495 4445 50  0000 L CNN
+F 2 "" H 13508 4390 50  0001 C CNN
+F 3 "~" H 13470 4540 50  0001 C CNN
+	1    13470 4540
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 6132E765
+P 13165 4545
+F 0 "C6" H 13165 4620 50  0000 L CNN
+F 1 "1nF" H 13190 4450 50  0000 L CNN
+F 2 "" H 13203 4395 50  0001 C CNN
+F 3 "~" H 13165 4545 50  0001 C CNN
+	1    13165 4545
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 6132DCA3
+P 12880 4535
+F 0 "C4" H 12890 4610 50  0000 L CNN
+F 1 "1nF" H 12895 4450 50  0000 L CNN
+F 2 "" H 12918 4385 50  0001 C CNN
+F 3 "~" H 12880 4535 50  0001 C CNN
+	1    12880 4535
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	12560 2040 16060 2040
+Wire Notes Line
+	12560 3280 16060 3280
+Wire Notes Line
+	14680 475  14680 3280
+Text Notes 12665 2230 0    39   ~ 0
+DRV_VREG:  Internalamplifier \nreference voltage and SDO pullup.
+$Comp
+L CSD18532NQ5B:CSD18532NQ5B U?
+U 1 1 62681882
+P 5750 2730
+F 0 "U?" V 6580 2530 60  0000 L CNN
+F 1 "CSD18532NQ5B" H 6255 2305 60  0000 L CNN
+F 2 "DNK8" H 6550 2970 60  0001 C CNN
+F 3 "" H 5750 2730 60  0000 C CNN
+	1    5750 2730
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6935 1130 6990 1130
+Wire Wire Line
+	8255 2975 8330 2975
+Wire Wire Line
+	6890 2990 6990 2990
+Wire Wire Line
+	7090 2990 7190 2990
+Wire Wire Line
+	5850 4565 5950 4565
+Wire Wire Line
+	5665 2965 5750 2965
+Wire Wire Line
+	5850 2965 5950 2965
+$Comp
+L CSD18532NQ5B:CSD18532NQ5B U?
+U 1 1 6271FB30
+P 6990 2730
+F 0 "U?" V 7820 2530 60  0000 L CNN
+F 1 "CSD18532NQ5B" H 7495 2305 60  0000 L CNN
+F 2 "DNK8" H 7790 2970 60  0001 C CNN
+F 3 "" H 6990 2730 60  0000 C CNN
+	1    6990 2730
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6990 1130
+Wire Wire Line
+	6990 1130 7090 1130
+Connection ~ 7090 1130
+Wire Wire Line
+	7090 1130 7190 1130
+Connection ~ 7190 1130
+Wire Wire Line
+	7190 1130 7290 1130
+$Comp
+L CSD18532NQ5B:CSD18532NQ5B U?
+U 1 1 6274500E
+P 5750 4565
+F 0 "U?" V 6580 4365 60  0000 L CNN
+F 1 "CSD18532NQ5B" H 6255 4140 60  0000 L CNN
+F 2 "DNK8" H 6550 4805 60  0001 C CNN
+F 3 "" H 5750 4565 60  0000 C CNN
+	1    5750 4565
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5750 2965
+Wire Wire Line
+	5750 2965 5850 2965
+Connection ~ 5950 2965
+Wire Wire Line
+	5950 2965 6050 2965
+Connection ~ 5950 4565
+Wire Wire Line
+	5950 4565 6050 4565
+Connection ~ 6050 4565
+Wire Wire Line
+	6050 2730 6110 2730
+Wire Wire Line
+	6990 2730 7090 2730
+Wire Wire Line
+	7290 2730 7350 2730
+Wire Wire Line
+	8630 2750 8695 2750
+Wire Wire Line
+	8330 2750 8430 2750
+Wire Wire Line
+	8275 1150 8330 1150
+Connection ~ 8330 1150
+Wire Wire Line
+	8330 1150 8430 1150
+Connection ~ 8430 1150
+Wire Wire Line
+	8430 1150 8530 1150
+Wire Wire Line
+	8530 1150 8630 1150
+Connection ~ 8530 1150
+$Comp
+L CSD18532NQ5B:CSD18532NQ5B U?
+U 1 1 62706068
+P 8330 2750
+F 0 "U?" V 9160 2550 60  0000 L CNN
+F 1 "CSD18532NQ5B" H 8835 2325 60  0000 L CNN
+F 2 "DNK8" H 9130 2990 60  0001 C CNN
+F 3 "" H 8330 2750 60  0000 C CNN
+	1    8330 2750
+	0    -1   -1   0   
+$EndComp
+Connection ~ 8430 2750
+Wire Wire Line
+	8430 2750 8530 2750
+Connection ~ 8430 2975
+Wire Wire Line
+	8430 2975 8530 2975
+Wire Wire Line
+	7090 2730 7190 2730
+Connection ~ 7090 2730
+Wire Wire Line
+	5750 2730 5850 2730
+Wire Wire Line
+	5850 2730 5850 2965
+Connection ~ 5850 2730
+Wire Wire Line
+	5850 2730 5950 2730
+Wire Wire Line
+	7290 4685 7205 4685
+Wire Wire Line
+	7290 4590 7290 4685
+Wire Wire Line
+	6990 4590 6915 4590
+Text GLabel 7205 4685 0    39   Input ~ 0
+SLB
+Text GLabel 6915 4590 0    39   Input ~ 0
+GLB
+$Comp
+L CSD18532NQ5B:CSD18532NQ5B U?
+U 1 1 62877531
+P 6990 4590
+F 0 "U?" V 7820 4390 60  0000 L CNN
+F 1 "CSD18532NQ5B" H 7495 4165 60  0000 L CNN
+F 2 "DNK8" H 7790 4830 60  0001 C CNN
+F 3 "" H 6990 4590 60  0000 C CNN
+	1    6990 4590
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7090 4590 7190 4590
+Wire Wire Line
+	6990 2990 7090 2990
+Connection ~ 6990 2990
+Wire Wire Line
+	7190 2990 7290 2990
+Connection ~ 7190 2990
+Connection ~ 7190 4590
+Wire Wire Line
+	7190 4590 7290 4590
+Connection ~ 7290 4590
+Wire Wire Line
+	8630 4670 8545 4670
+Wire Wire Line
+	8630 4575 8630 4670
+Wire Wire Line
+	8330 4575 8255 4575
+Text GLabel 8545 4670 0    39   Input ~ 0
+SLB
+Text GLabel 8255 4575 0    39   Input ~ 0
+GLB
+$Comp
+L CSD18532NQ5B:CSD18532NQ5B U?
+U 1 1 628C4F21
+P 8330 4575
+F 0 "U?" V 9160 4375 60  0000 L CNN
+F 1 "CSD18532NQ5B" H 8835 4150 60  0000 L CNN
+F 2 "DNK8" H 9130 4815 60  0001 C CNN
+F 3 "" H 8330 4575 60  0000 C CNN
+	1    8330 4575
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8430 4575 8530 4575
+Connection ~ 8530 4575
+Wire Wire Line
+	8530 4575 8630 4575
+Connection ~ 8630 4575
+Wire Wire Line
+	8330 2975 8430 2975
+Connection ~ 8330 2975
+Wire Wire Line
+	8530 2975 8630 2975
+Connection ~ 8530 2975
+Text Notes 4100 8400 0    59   ~ 0
+Input Voltage-\n8V to 40V
+Text Notes 745  8790 0    59   ~ 0
+Output Voltage-\n3.3V 1A
 $EndSCHEMATC
