@@ -1191,7 +1191,7 @@ Wire Wire Line
 	2450 2195 2260 2195
 Wire Wire Line
 	2450 2295 2260 2295
-Text GLabel 2450 2795 2    39   Input ~ 0
+Text GLabel 2450 1895 2    39   Input ~ 0
 DRV_nFAULT
 Text GLabel 2450 2895 2    39   Input ~ 0
 DRV_LC
@@ -1206,17 +1206,17 @@ Wire Wire Line
 Wire Wire Line
 	2450 2995 2260 2995
 Wire Wire Line
-	2450 2795 2260 2795
+	2450 1895 2260 1895
 Text GLabel 2450 3195 2    39   Input ~ 0
 DRV_HB
 Text GLabel 2450 3295 2    39   Input ~ 0
 DRV_LA
 Text GLabel 2450 3395 2    39   Input ~ 0
 DRV_HA
-Text GLabel 2450 3495 2    39   Input ~ 0
+Text GLabel 2450 1695 2    39   Input ~ 0
 DRV_EN_GATE
 Wire Wire Line
-	2450 3495 2260 3495
+	2450 1695 2260 1695
 Wire Wire Line
 	2450 3295 2260 3295
 Wire Wire Line
