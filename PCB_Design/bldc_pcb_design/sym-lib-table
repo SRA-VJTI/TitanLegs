@@ -3,4 +3,6 @@
   (lib (name DRV8305NPHPR)(type Legacy)(uri ${KIPRJMOD}/component_libraries/DRV8305NPHPR/DRV8305NPHPR.lib)(options "")(descr ""))
   (lib (name AS5600-ASOT)(type Legacy)(uri ${KIPRJMOD}/component_libraries/AS5600/AS5600-ASOT.lib)(options "")(descr ""))
   (lib (name CSD18532NQ5B)(type Legacy)(uri ${KIPRJMOD}/component_libraries/CSD18532NQ5B/CSD18532NQ5B.lib)(options "")(descr ""))
+  (lib (name AS6200)(type Legacy)(uri ${KIPRJMOD}/component_libraries/AS6200-AWLT-S/AS6200.lib)(options "")(descr ""))
+  (lib (name DS18S20Z_)(type Legacy)(uri ${KIPRJMOD}/component_libraries/DS18S20Z_/DS18S20Z_.lib)(options "")(descr ""))
 )

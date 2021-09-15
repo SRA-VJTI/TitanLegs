@@ -1,0 +1,36 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Taos AS6200-AWLT-S
+#
+DEF AS6200-AWLT-S U 0 40 Y Y 1 L N
+F0 "U" 0 200 50 H V L CNN 
+F1 "AS6200-AWLT-S" 0 300 50 H V L CNN 
+F2 "Taos-AS6200-AWLT-S-0-0-*" 0 400 50 H I L CNN 
+F3 "http://ams.com/eng/content/download/900532/2174147/403735" 0 500 50 H I L CNN 
+F4 "IC" 0 600 50 H I L CNN "category"
+F5 "IC SENSOR TEMP SMD" 0 700 50 H I L CNN "digikey description"
+F6 "AS6200-AWLT-SCT-ND" 0 800 50 H I L CNN "digikey part number"
+F7 "BGA6N40P2X3_153X104X37" 0 900 50 H I L CNN "ipc land pattern name"
+F8 "yes" 0 1000 50 H I L CNN "lead free"
+F9 "e693b457d05accdd" 0 1100 50 H I L CNN "library id"
+F10 "Taos" 0 1200 50 H I L CNN "manufacturer"
+F11 "Board Mount Temperature Sensors AS6200-AWLT-S WLP LF T&R" 0 1300 50 H I L CNN "mouser description"
+F12 "985-AS6200-AWLT-S" 0 1400 50 H I L CNN "mouser part number"
+F13 "WLCSP6" 0 1500 50 H I L CNN "package"
+F14 "yes" 0 1600 50 H I L CNN "rohs"
+F15 "+125°C" 0 1700 50 H I L CNN "temperature range high"
+F16 "-40°C" 0 1800 50 H I L CNN "temperature range low"
+F17 "3.6V" 0 1900 50 H I L CNN "voltage"
+DRAW
+X VDD B2 100 0 100 R 40 40 1 1 U 
+X ADD0 B1 1100 0 100 L 40 40 1 1 U 
+X ALERT A1 100 -200 100 R 40 40 1 1 U 
+X SCL A3 1100 -200 100 L 40 40 1 1 U 
+X SDA B3 1100 -300 100 L 40 40 1 1 U 
+X VSS A2 1100 -500 100 L 40 40 1 1 U 
+S 200 100 1000 -600 1 1 0 f
+ENDDRAW
+ENDDEF
+#
+# End Library

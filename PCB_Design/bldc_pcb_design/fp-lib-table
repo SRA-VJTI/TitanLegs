@@ -1,6 +1,8 @@
 (fp_lib_table
-  (lib (name BSC022N04LS6ATMA1)(type KiCad)(uri ${KIPRJMOD}/component_libraries/BSC022N04LS6ATMA1/BSC022N04LS6ATMA1.pretty)(options "")(descr ""))
-  (lib (name DRV8305NPHPR)(type KiCad)(uri ${KIPRJMOD}/component_libraries/DRV8305NPHPR/DRV8305NPHPR.pretty)(options "")(descr ""))
-  (lib (name AS5600)(type KiCad)(uri ${KIPRJMOD}/component_libraries/AS5600/AS5600)(options "")(descr ""))
+  (lib (name AS5600)(type KiCad)(uri ${KIPRJMOD}/component_libraries/AS5600)(options "")(descr ""))
   (lib (name CSD18532NQ5B)(type KiCad)(uri ${KIPRJMOD}/component_libraries/CSD18532NQ5B)(options "")(descr ""))
+  (lib (name AS6200-AWLT-S)(type KiCad)(uri ${KIPRJMOD}/component_libraries/AS6200-AWLT-S)(options "")(descr ""))
+  (lib (name BSC022N04LS6ATMA1)(type KiCad)(uri ${KIPRJMOD}/component_libraries/BSC022N04LS6ATMA1)(options "")(descr ""))
+  (lib (name DRV8305NPHPR)(type KiCad)(uri ${KIPRJMOD}/component_libraries/DRV8305NPHPR)(options "")(descr ""))
+  (lib (name DS18S20Z_)(type KiCad)(uri ${KIPRJMOD}/component_libraries/DS18S20Z_)(options "")(descr ""))
 )
