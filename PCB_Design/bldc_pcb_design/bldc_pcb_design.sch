@@ -1175,7 +1175,7 @@ Wire Wire Line
 	2290 2035 2100 2035
 Wire Wire Line
 	2290 2135 2100 2135
-Text GLabel 2290 3435 2    39   Input ~ 0
+Text GLabel 2290 3535 2    39   Input ~ 0
 DRV_nFAULT
 Text GLabel 2290 3135 2    39   Input ~ 0
 DRV_LC
@@ -1190,7 +1190,7 @@ Wire Wire Line
 Wire Wire Line
 	2290 3035 2100 3035
 Wire Wire Line
-	2290 3435 2100 3435
+	2290 3535 2100 3535
 Text GLabel 2290 2835 2    39   Input ~ 0
 DRV_HB
 Text GLabel 2290 2735 2    39   Input ~ 0
@@ -1724,10 +1724,10 @@ Wire Wire Line
 Connection ~ 8630 1155
 Wire Wire Line
 	8630 1155 8720 1155
-Text GLabel 2290 2235 2    39   Input ~ 0
+Text GLabel 2290 3435 2    39   Input ~ 0
 TEMP_DQ
 Wire Wire Line
-	2290 2235 2100 2235
+	2290 3435 2100 3435
 NoConn ~ 900  2535
 NoConn ~ 900  2635
 NoConn ~ 900  2735
@@ -1738,7 +1738,7 @@ NoConn ~ 900  1535
 NoConn ~ 900  1635
 NoConn ~ 2100 1735
 NoConn ~ 2100 1535
-NoConn ~ 2100 3535
+NoConn ~ 2100 3635
 $Comp
 L DS18S20Z_:DS18S20Z+ U?
 U 1 1 615F141B
@@ -1953,7 +1953,7 @@ Wire Wire Line
 Wire Notes Line width 10
 	13770 3255 13770 2015
 Text Notes 1960 4270 0    59   ~ 12
-**Confirm Usage of \nIO 5, 12, and 15 \n
+**Confirm Usage of \nIO 5, 12
 Text GLabel 13565 4230 1    39   Input ~ 0
 SO1
 $Comp
@@ -2044,4 +2044,5 @@ Wire Notes Line
 	13440 3900 13440 5150
 Wire Notes Line
 	13445 3900 14320 3900
+NoConn ~ 2100 2235
 $EndSCHEMATC
