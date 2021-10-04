@@ -16,12 +16,12 @@ $EndDescr
 $Comp
 L power:GND #PWR016
 U 1 1 612ACDB6
-P 10565 4285
-F 0 "#PWR016" H 10565 4035 50  0001 C CNN
-F 1 "GND" H 10570 4112 50  0000 C CNN
-F 2 "" H 10565 4285 50  0001 C CNN
-F 3 "" H 10565 4285 50  0001 C CNN
-	1    10565 4285
+P 10535 4115
+F 0 "#PWR016" H 10535 3865 50  0001 C CNN
+F 1 "GND" H 10540 3942 50  0000 C CNN
+F 2 "" H 10535 4115 50  0001 C CNN
+F 3 "" H 10535 4115 50  0001 C CNN
+	1    10535 4115
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -38,12 +38,12 @@ $EndComp
 $Comp
 L Device:C C19
 U 1 1 613C1C94
-P 13395 2780
-F 0 "C19" H 13225 2785 50  0000 C CNN
-F 1 "1uF 6.3V" H 13215 2885 50  0000 C CNN
-F 2 "" H 13433 2630 50  0001 C CNN
-F 3 "~" H 13395 2780 50  0001 C CNN
-	1    13395 2780
+P 13410 2810
+F 0 "C19" H 13240 2815 50  0000 C CNN
+F 1 "1uF 6.3V" H 13230 2915 50  0000 C CNN
+F 2 "" H 13448 2660 50  0001 C CNN
+F 3 "~" H 13410 2810 50  0001 C CNN
+	1    13410 2810
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -310,24 +310,24 @@ Text Notes 3795 4850 0    59   ~ 0
 3V3_ISOLATED is used to \npower ESP32 when board \nisn't being powered \nby VIN. (while programming)\n
 Text GLabel 1500 1135 1    39   Input ~ 0
 3V3_IN
-Text GLabel 1815 4555 0    39   Input ~ 0
+Text GLabel 2155 4410 0    39   Input ~ 0
 3V3_ISOLATED
-Text GLabel 2295 4685 2    39   Input ~ 0
+Text GLabel 2635 4540 2    39   Input ~ 0
 3V3_IN
-Text GLabel 1815 4810 0    39   Input ~ 0
+Text GLabel 2155 4665 0    39   Input ~ 0
 3V3_REGULATED
 Wire Wire Line
-	1815 4555 1960 4555
+	2155 4410 2300 4410
 Wire Wire Line
-	1960 4555 1960 4685
+	2300 4410 2300 4540
 Wire Wire Line
-	1960 4810 1815 4810
+	2300 4665 2155 4665
 Wire Wire Line
-	2295 4685 1960 4685
-Connection ~ 1960 4685
+	2635 4540 2300 4540
+Connection ~ 2300 4540
 Wire Wire Line
-	1960 4685 1960 4810
-Text Notes 1465 5075 0    39   ~ 0
+	2300 4540 2300 4665
+Text Notes 1875 5080 0    39   ~ 0
 Don't connect 3V3_ISOLATED \nwhile board is powered by Battery
 Text GLabel 3540 1585 1    39   Input ~ 0
 3V3_IN
@@ -362,17 +362,13 @@ F 3 "" H 6510 1270 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6050 4660 5965 4660
-Wire Wire Line
-	6050 4565 6050 4660
+	5750 4635 5665 4635
 Wire Wire Line
 	8430 2975 8430 2755
 Wire Wire Line
 	7090 2990 7090 2730
 Connection ~ 5750 1130
 Connection ~ 5850 2965
-Wire Wire Line
-	5750 4565 5675 4565
 Connection ~ 5950 1130
 Wire Wire Line
 	5850 1130 5950 1130
@@ -387,7 +383,7 @@ Wire Notes Line width 10
 Wire Notes Line width 10
 	2970 2410 5155 2410
 Wire Notes Line width 10
-	485  4430 2970 4430
+	490  4245 2975 4245
 Wire Notes Line width 10
 	2970 2410 2970 5145
 $Comp
@@ -718,11 +714,11 @@ Text Notes 12630 3755 0    39   ~ 0
 SNP1, SN2 and SN3 are negative current sense \ninput pins for amplifers 1,2 and 3 respectively\n
 Text Notes 13370 670  0    39   ~ 0
 VCPH - High Side Gate Driver regulator\nVCP_LSD - Low SIde Gate Driver regulator
-Text GLabel 11465 1435 1    39   Input ~ 0
+Text GLabel 11435 1265 1    39   Input ~ 0
 DRV_HG_reg
-Text GLabel 11565 1435 1    39   Input ~ 0
+Text GLabel 11535 1265 1    39   Input ~ 0
 DRV_LG_reg
-Text GLabel 11165 1435 1    39   Input ~ 0
+Text GLabel 11135 1265 1    39   Input ~ 0
 PVDD
 Text GLabel 13645 1590 3    39   Input ~ 0
 PVDD
@@ -749,36 +745,36 @@ Wire Wire Line
 	14230 1540 14230 1610
 Wire Wire Line
 	14230 1240 14230 1170
-Text GLabel 11365 1435 1    39   Input ~ 0
+Text GLabel 11335 1265 1    39   Input ~ 0
 CP2H
-Text GLabel 11265 1435 1    39   Input ~ 0
+Text GLabel 11235 1265 1    39   Input ~ 0
 CP2L
 Text GLabel 14995 1055 1    39   Input ~ 0
 CP1H
 Text GLabel 14995 1470 3    39   Input ~ 0
 CP1L
-Text GLabel 10965 1435 1    39   Input ~ 0
+Text GLabel 10935 1265 1    39   Input ~ 0
 CP1H
-Text GLabel 11065 1435 1    39   Input ~ 0
+Text GLabel 11035 1265 1    39   Input ~ 0
 CP1L
 Wire Wire Line
-	11565 1625 11565 1435
+	11535 1455 11535 1265
 Wire Wire Line
-	11465 1625 11465 1435
+	11435 1455 11435 1265
 Wire Wire Line
-	11365 1625 11365 1435
+	11335 1455 11335 1265
 Wire Wire Line
-	11265 1625 11265 1435
+	11235 1455 11235 1265
 Wire Wire Line
-	11165 1625 11165 1435
+	11135 1455 11135 1265
 Wire Wire Line
-	10465 1625 10465 1435
+	10435 1455 10435 1265
 Wire Wire Line
-	10765 1625 10765 1435
+	10735 1455 10735 1265
 Wire Wire Line
-	11065 1625 11065 1435
+	11035 1455 11035 1265
 Wire Wire Line
-	10965 1625 10965 1435
+	10935 1455 10935 1265
 $Comp
 L Device:C C22
 U 1 1 6191E71A
@@ -818,12 +814,12 @@ Flying capacitors for \ncharge pumps with rating :\nPVDD for CP1\nPVDD*2 for CP2
 $Comp
 L power:GND #PWR017
 U 1 1 61A45317
-P 10765 1435
-F 0 "#PWR017" H 10765 1185 50  0001 C CNN
-F 1 "GND" H 10770 1262 50  0000 C CNN
-F 2 "" H 10765 1435 50  0001 C CNN
-F 3 "" H 10765 1435 50  0001 C CNN
-	1    10765 1435
+P 10735 1265
+F 0 "#PWR017" H 10735 1015 50  0001 C CNN
+F 1 "GND" H 10740 1092 50  0000 C CNN
+F 2 "" H 10735 1265 50  0001 C CNN
+F 3 "" H 10735 1265 50  0001 C CNN
+	1    10735 1265
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -866,47 +862,47 @@ $EndComp
 $Comp
 L power:GND #PWR020
 U 1 1 613CEC5C
-P 13395 3000
-F 0 "#PWR020" H 13395 2750 50  0001 C CNN
-F 1 "GND" H 13400 2827 50  0000 C CNN
-F 2 "" H 13395 3000 50  0001 C CNN
-F 3 "" H 13395 3000 50  0001 C CNN
-	1    13395 3000
+P 13410 3030
+F 0 "#PWR020" H 13410 2780 50  0001 C CNN
+F 1 "GND" H 13415 2857 50  0000 C CNN
+F 2 "" H 13410 3030 50  0001 C CNN
+F 3 "" H 13410 3030 50  0001 C CNN
+	1    13410 3030
 	1    0    0    -1  
 $EndComp
-Text GLabel 10665 4415 3    39   Input ~ 0
+Text GLabel 10635 4245 3    39   Input ~ 0
 DRV_AVDD
-Text GLabel 10465 1435 1    39   Input ~ 0
+Text GLabel 10435 1265 1    39   Input ~ 0
 DRV_VREG
 Text GLabel 15675 2635 1    39   Input ~ 0
 DRV_DVDD
-Text GLabel 13395 2560 1    39   Input ~ 0
+Text GLabel 13410 2590 1    39   Input ~ 0
 DRV_VREG
 Wire Wire Line
-	10665 1625 10665 1445
-Text GLabel 10665 1445 1    39   Input ~ 0
+	10635 1455 10635 1275
+Text GLabel 10635 1275 1    39   Input ~ 0
 DRV_DVDD
 $Comp
 L DRV8305NPHPR:DRV8305NPHPR IC1
 U 1 1 61052D6F
-P 10165 2425
-F 0 "IC1" H 10970 2085 50  0000 L CNN
-F 1 "DRV8305NPHPR" H 10750 1840 50  0000 L CNN
-F 2 "QFP50P900X900X120-48N" H 11715 3025 50  0001 L CNN
-F 3 "http://www.mouser.com/ds/2/405/drv8305-768621.pdf" H 11715 2925 50  0001 L CNN
-F 4 "Motor / Motion / Ignition Controllers & Drivers Three Phase Gate Driver with Three Integrated Current Shunt Amplifiers 48-HTQFP -40 to 125" H 11715 2825 50  0001 L CNN "Description"
-F 5 "1.2" H 11715 2725 50  0001 L CNN "Height"
-F 6 "Texas Instruments" H 11715 2625 50  0001 L CNN "Manufacturer_Name"
-F 7 "DRV8305NPHPR" H 11715 2525 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "595-DRV8305NPHPR" H 11715 2425 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/DRV8305NPHPR?qs=kFLL9AfgRSDaehWhXenR2Q%3D%3D" H 11715 2325 50  0001 L CNN "Mouser Price/Stock"
-F 10 "DRV8305NPHPR" H 11715 2225 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/drv8305nphpr/texas-instruments" H 11715 2125 50  0001 L CNN "Arrow Price/Stock"
-	1    10165 2425
+P 10135 2255
+F 0 "IC1" H 10940 1915 50  0000 L CNN
+F 1 "DRV8305NPHPR" H 10720 1670 50  0000 L CNN
+F 2 "QFP50P900X900X120-48N" H 11685 2855 50  0001 L CNN
+F 3 "http://www.mouser.com/ds/2/405/drv8305-768621.pdf" H 11685 2755 50  0001 L CNN
+F 4 "Motor / Motion / Ignition Controllers & Drivers Three Phase Gate Driver with Three Integrated Current Shunt Amplifiers 48-HTQFP -40 to 125" H 11685 2655 50  0001 L CNN "Description"
+F 5 "1.2" H 11685 2555 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 11685 2455 50  0001 L CNN "Manufacturer_Name"
+F 7 "DRV8305NPHPR" H 11685 2355 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "595-DRV8305NPHPR" H 11685 2255 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/DRV8305NPHPR?qs=kFLL9AfgRSDaehWhXenR2Q%3D%3D" H 11685 2155 50  0001 L CNN "Mouser Price/Stock"
+F 10 "DRV8305NPHPR" H 11685 2055 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/drv8305nphpr/texas-instruments" H 11685 1955 50  0001 L CNN "Arrow Price/Stock"
+	1    10135 2255
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10565 4225 10565 4285
+	10535 4055 10535 4115
 $Comp
 L power:GND #PWR022
 U 1 1 615B2683
@@ -919,17 +915,17 @@ F 3 "" H 15675 3040 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13395 2560 13395 2630
+	13410 2590 13410 2660
 Wire Wire Line
-	13395 2930 13395 3000
+	13410 2960 13410 3030
 Wire Wire Line
 	15675 3040 15675 2975
 Wire Wire Line
 	15675 2635 15675 2675
 Text Notes 15500 2265 0    39   ~ 0
 DRV_DVDD: 3.3V \ninternal digital\nsupply regulator
-Text Notes 12595 2820 0    39   ~ 0
-Connect with-> \n3.3V or 5V, 50-mA LDO; \n    connect 1-µF to GND\nReference voltage; \n    LDO disabled
+Text Notes 12600 3145 0    39   ~ 0
+Connect with-> \n3.3V or 5V, 50-mA LDO; \n  connect 1-µF to GND\nReference voltage; \n    LDO disabled
 Text GLabel 15105 2895 3    39   Input ~ 0
 VDRAIN
 Text GLabel 12720 990  1    39   Input ~ 0
@@ -961,8 +957,8 @@ Wire Wire Line
 Wire Wire Line
 	12720 990  12720 1055
 Wire Wire Line
-	10865 1625 10865 1435
-Text GLabel 10865 1435 1    39   Input ~ 0
+	10835 1455 10835 1265
+Text GLabel 10835 1265 1    39   Input ~ 0
 VDRAIN
 Text GLabel 15105 2435 1    39   Input ~ 0
 PVDD
@@ -975,115 +971,115 @@ PVDD
 Text GLabel 8275 1155 0    39   Input ~ 0
 PVDD
 Wire Wire Line
-	10665 4415 10665 4225
+	10635 4245 10635 4055
 Text GLabel 14095 2660 1    39   Input ~ 0
 DRV_AVDD
 Wire Wire Line
 	14095 2660 14095 2725
-NoConn ~ 10565 1625
-Text GLabel 11465 4415 3    39   Input ~ 0
+NoConn ~ 10535 1455
+Text GLabel 11435 4245 3    39   Input ~ 0
 SN1
-Text GLabel 12965 4760 3    39   Input ~ 0
+Text GLabel 12090 4900 3    39   Input ~ 0
 SN2
-Text GLabel 11265 4415 3    39   Input ~ 0
+Text GLabel 11235 4245 3    39   Input ~ 0
 SN2
-Text GLabel 11065 4415 3    39   Input ~ 0
+Text GLabel 11035 4245 3    39   Input ~ 0
 SN3
-Text GLabel 13250 4760 3    39   Input ~ 0
+Text GLabel 12375 4900 3    39   Input ~ 0
 SN3
-Text GLabel 11565 4415 3    39   Input ~ 0
+Text GLabel 11535 4245 3    39   Input ~ 0
 SP1
-Text GLabel 11365 4415 3    39   Input ~ 0
+Text GLabel 11335 4245 3    39   Input ~ 0
 SP2
-Text GLabel 11165 4415 3    39   Input ~ 0
+Text GLabel 11135 4245 3    39   Input ~ 0
 SP3
-Text GLabel 10765 4415 3    39   Input ~ 0
+Text GLabel 10735 4245 3    39   Input ~ 0
 SO1
-Text GLabel 10865 4415 3    39   Input ~ 0
+Text GLabel 10835 4245 3    39   Input ~ 0
 SO2
-Text GLabel 10965 4415 3    39   Input ~ 0
+Text GLabel 10935 4245 3    39   Input ~ 0
 SO3
-Text GLabel 12685 4760 3    39   Input ~ 0
+Text GLabel 11810 4900 3    39   Input ~ 0
 SN1
 Wire Wire Line
-	10865 4415 10865 4225
+	10835 4245 10835 4055
 Wire Wire Line
-	10765 4415 10765 4225
+	10735 4245 10735 4055
 Wire Wire Line
-	10965 4415 10965 4225
+	10935 4245 10935 4055
 Wire Wire Line
-	11065 4415 11065 4225
+	11035 4245 11035 4055
 Wire Wire Line
-	11265 4415 11265 4225
+	11235 4245 11235 4055
 Wire Wire Line
-	11165 4415 11165 4225
+	11135 4245 11135 4055
 Wire Wire Line
-	11365 4415 11365 4225
+	11335 4245 11335 4055
 Wire Wire Line
-	11465 4415 11465 4225
+	11435 4245 11435 4055
 Wire Wire Line
-	11565 4415 11565 4225
+	11535 4245 11535 4055
 Wire Wire Line
-	12685 4640 12685 4760
+	11810 4780 11810 4900
 Wire Wire Line
-	12965 4640 12965 4760
+	12090 4780 12090 4900
 Wire Wire Line
-	13250 4640 13250 4760
-Text GLabel 12055 2425 2    39   Input ~ 0
+	12375 4780 12375 4900
+Text GLabel 12025 2255 2    39   Input ~ 0
 GHA
-Text GLabel 12055 2525 2    39   Input ~ 0
+Text GLabel 12025 2355 2    39   Input ~ 0
 SHA
-Text GLabel 12055 2625 2    39   Input ~ 0
+Text GLabel 12025 2455 2    39   Input ~ 0
 SLA
-Text GLabel 12055 2725 2    39   Input ~ 0
+Text GLabel 12025 2555 2    39   Input ~ 0
 GLA
 Wire Wire Line
-	12055 2725 11865 2725
+	12025 2555 11835 2555
 Wire Wire Line
-	12055 2525 11865 2525
+	12025 2355 11835 2355
 Wire Wire Line
-	12055 2625 11865 2625
+	12025 2455 11835 2455
 Wire Wire Line
-	12055 2425 11865 2425
-Text GLabel 12055 2825 2    39   Input ~ 0
+	12025 2255 11835 2255
+Text GLabel 12025 2655 2    39   Input ~ 0
 GHB
-Text GLabel 12055 2925 2    39   Input ~ 0
+Text GLabel 12025 2755 2    39   Input ~ 0
 SHB
-Text GLabel 12055 3025 2    39   Input ~ 0
+Text GLabel 12025 2855 2    39   Input ~ 0
 SLB
-Text GLabel 12055 3125 2    39   Input ~ 0
+Text GLabel 12025 2955 2    39   Input ~ 0
 GLB
 Wire Wire Line
-	12055 3125 11865 3125
+	12025 2955 11835 2955
 Wire Wire Line
-	12055 2925 11865 2925
+	12025 2755 11835 2755
 Wire Wire Line
-	12055 3025 11865 3025
+	12025 2855 11835 2855
 Wire Wire Line
-	12055 2825 11865 2825
-Text GLabel 12055 3225 2    39   Input ~ 0
+	12025 2655 11835 2655
+Text GLabel 12025 3055 2    39   Input ~ 0
 GHC
-Text GLabel 12055 3325 2    39   Input ~ 0
+Text GLabel 12025 3155 2    39   Input ~ 0
 SHC
-Text GLabel 12055 3425 2    39   Input ~ 0
+Text GLabel 12025 3255 2    39   Input ~ 0
 SLC
-Text GLabel 12055 3525 2    39   Input ~ 0
+Text GLabel 12025 3355 2    39   Input ~ 0
 GLC
 Wire Wire Line
-	12055 3525 11865 3525
+	12025 3355 11835 3355
 Wire Wire Line
-	12055 3325 11865 3325
+	12025 3155 11835 3155
 Wire Wire Line
-	12055 3425 11865 3425
+	12025 3255 11835 3255
 Wire Wire Line
-	12055 3225 11865 3225
+	12025 3055 11835 3055
 Text GLabel 6110 2730 2    39   Input ~ 0
 GHA
 Text GLabel 5665 2965 0    39   Input ~ 0
 SHA
-Text GLabel 5965 4660 0    39   Input ~ 0
+Text GLabel 5665 4635 0    39   Input ~ 0
 SLA
-Text GLabel 5675 4565 0    39   Input ~ 0
+Text GLabel 6095 4635 2    39   Input ~ 0
 GLA
 Wire Wire Line
 	5750 1130 5710 1130
@@ -1097,54 +1093,54 @@ Text GLabel 8695 2750 2    39   Input ~ 0
 GHC
 Text GLabel 8255 2975 0    39   Input ~ 0
 SHC
-Text GLabel 9975 3525 0    39   Input ~ 0
+Text GLabel 9945 3355 0    39   Input ~ 0
 DRV_SPI_CLK
-Text GLabel 9975 3425 0    39   Input ~ 0
+Text GLabel 9945 3255 0    39   Input ~ 0
 DRV_SPI_MISO
-Text GLabel 9975 3325 0    39   Input ~ 0
+Text GLabel 9945 3155 0    39   Input ~ 0
 DRV_SPI_MOSI
-Text GLabel 9975 3225 0    39   Input ~ 0
+Text GLabel 9945 3055 0    39   Input ~ 0
 DRV_SPI_nSCS
 Wire Wire Line
-	9975 3225 10165 3225
+	9945 3055 10135 3055
 Wire Wire Line
-	9975 3425 10165 3425
+	9945 3255 10135 3255
 Wire Wire Line
-	9975 3325 10165 3325
+	9945 3155 10135 3155
 Wire Wire Line
-	9975 3525 10165 3525
-Text GLabel 9975 3125 0    39   Input ~ 0
+	9945 3355 10135 3355
+Text GLabel 9945 2955 0    39   Input ~ 0
 DRV_nFAULT
-Text GLabel 9975 3025 0    39   Input ~ 0
+Text GLabel 9945 2855 0    39   Input ~ 0
 DRV_LC
-Text GLabel 9975 2925 0    39   Input ~ 0
+Text GLabel 9945 2755 0    39   Input ~ 0
 DRV_HC
-Text GLabel 9975 2825 0    39   Input ~ 0
+Text GLabel 9945 2655 0    39   Input ~ 0
 DRV_LB
 Wire Wire Line
-	9975 2825 10165 2825
+	9945 2655 10135 2655
 Wire Wire Line
-	9975 3025 10165 3025
+	9945 2855 10135 2855
 Wire Wire Line
-	9975 2925 10165 2925
+	9945 2755 10135 2755
 Wire Wire Line
-	9975 3125 10165 3125
-Text GLabel 9975 2725 0    39   Input ~ 0
+	9945 2955 10135 2955
+Text GLabel 9945 2555 0    39   Input ~ 0
 DRV_HB
-Text GLabel 9975 2625 0    39   Input ~ 0
+Text GLabel 9945 2455 0    39   Input ~ 0
 DRV_LA
-Text GLabel 9975 2525 0    39   Input ~ 0
+Text GLabel 9945 2355 0    39   Input ~ 0
 DRV_HA
-Text GLabel 9975 2425 0    39   Input ~ 0
+Text GLabel 9945 2255 0    39   Input ~ 0
 DRV_EN_GATE
 Wire Wire Line
-	9975 2425 10165 2425
+	9945 2255 10135 2255
 Wire Wire Line
-	9975 2625 10165 2625
+	9945 2455 10135 2455
 Wire Wire Line
-	9975 2525 10165 2525
+	9945 2355 10135 2355
 Wire Wire Line
-	9975 2725 10165 2725
+	9945 2555 10135 2555
 Wire Notes Line width 20
 	9395 5145 16085 5145
 Wire Notes Line
@@ -1155,8 +1151,6 @@ Wire Notes Line width 10
 	13305 500  13305 2050
 Wire Notes Line
 	12380 5145 12375 5145
-Wire Notes Line width 10
-	17420 3925 17420 5795
 Wire Notes Line
 	15205 5140 15200 5140
 Text GLabel 2290 2135 2    39   Input ~ 0
@@ -1221,10 +1215,10 @@ F 3 "~" H 14420 4155 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10465 4415 10465 4225
+	10435 4245 10435 4055
 Wire Wire Line
 	14420 3855 14420 4005
-Text GLabel 10465 4415 3    39   Input ~ 0
+Text GLabel 10435 4245 3    39   Input ~ 0
 PWR_GD
 Wire Notes Line width 10
 	14320 3285 14320 5155
@@ -1234,53 +1228,45 @@ Wire Notes Line
 	14540 5150 14555 5150
 Text Notes 14370 3455 0    39   ~ 0
 DRV_nFAULT: Fault\nIndicator and LED
-Text Notes 13865 2280 0    39   ~ 0
+Text Notes 13875 2260 0    39   ~ 0
 5-V internal analog \nsupply regulator\nbypass capacitor
 Text Notes 14590 2150 0    39   ~ 0
 High Side MOSFET Drain
 Wire Wire Line
-	13250 4220 13250 4340
-Wire Wire Line
-	12965 4220 12965 4340
-Wire Wire Line
-	12685 4220 12685 4340
-Text GLabel 13250 4220 1    39   Input ~ 0
+	12375 4360 12375 4480
+Text GLabel 12375 4360 1    39   Input ~ 0
 SP3
-Text GLabel 12965 4220 1    39   Input ~ 0
-SP2
-Text GLabel 12685 4220 1    39   Input ~ 0
-SP1
 $Comp
 L Device:C C17
 U 1 1 6132F188
-P 13250 4490
-F 0 "C17" H 13250 4565 50  0000 L CNN
-F 1 "1nF" H 13275 4395 50  0000 L CNN
-F 2 "" H 13288 4340 50  0001 C CNN
-F 3 "~" H 13250 4490 50  0001 C CNN
-	1    13250 4490
+P 12375 4630
+F 0 "C17" H 12375 4705 50  0000 L CNN
+F 1 "1nF" H 12400 4535 50  0000 L CNN
+F 2 "" H 12413 4480 50  0001 C CNN
+F 3 "~" H 12375 4630 50  0001 C CNN
+	1    12375 4630
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C16
 U 1 1 6132E765
-P 12965 4490
-F 0 "C16" H 12965 4565 50  0000 L CNN
-F 1 "1nF" H 12990 4395 50  0000 L CNN
-F 2 "" H 13003 4340 50  0001 C CNN
-F 3 "~" H 12965 4490 50  0001 C CNN
-	1    12965 4490
+P 12090 4630
+F 0 "C16" H 12090 4705 50  0000 L CNN
+F 1 "1nF" H 12115 4535 50  0000 L CNN
+F 2 "" H 12128 4480 50  0001 C CNN
+F 3 "~" H 12090 4630 50  0001 C CNN
+	1    12090 4630
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C15
 U 1 1 6132DCA3
-P 12685 4490
-F 0 "C15" H 12695 4565 50  0000 L CNN
-F 1 "1nF" H 12700 4405 50  0000 L CNN
-F 2 "" H 12723 4340 50  0001 C CNN
-F 3 "~" H 12685 4490 50  0001 C CNN
-	1    12685 4490
+P 11810 4630
+F 0 "C15" H 11820 4705 50  0000 L CNN
+F 1 "1nF" H 11825 4545 50  0000 L CNN
+F 2 "" H 11848 4480 50  0001 C CNN
+F 3 "~" H 11810 4630 50  0001 C CNN
+	1    11810 4630
 	1    0    0    -1  
 $EndComp
 Wire Notes Line width 10
@@ -1304,16 +1290,6 @@ Wire Wire Line
 	6935 1130 6990 1130
 Wire Wire Line
 	8255 2975 8330 2975
-Wire Wire Line
-	6890 2990 6990 2990
-Wire Wire Line
-	7090 2990 7190 2990
-Wire Wire Line
-	5850 4565 5950 4565
-Wire Wire Line
-	5665 2965 5750 2965
-Wire Wire Line
-	5850 2965 5950 2965
 $Comp
 L CSD18532NQ5B:CSD18532NQ5B U6
 U 1 1 6271FB30
@@ -1332,27 +1308,6 @@ Connection ~ 7090 1130
 Wire Wire Line
 	7090 1130 7190 1130
 Connection ~ 7190 1130
-$Comp
-L CSD18532NQ5B:CSD18532NQ5B U5
-U 1 1 6274500E
-P 5750 4565
-F 0 "U5" V 6580 4365 60  0000 L CNN
-F 1 "CSD18532NQ5B" H 6255 4140 60  0000 L CNN
-F 2 "DNK8" H 6550 4805 60  0001 C CNN
-F 3 "" H 5750 4565 60  0000 C CNN
-	1    5750 4565
-	0    -1   -1   0   
-$EndComp
-Connection ~ 5750 2965
-Wire Wire Line
-	5750 2965 5850 2965
-Connection ~ 5950 2965
-Wire Wire Line
-	5950 2965 6050 2965
-Connection ~ 5950 4565
-Wire Wire Line
-	5950 4565 6050 4565
-Connection ~ 6050 4565
 Wire Wire Line
 	6050 2730 6110 2730
 Wire Wire Line
@@ -1399,49 +1354,6 @@ Wire Wire Line
 Connection ~ 5850 2730
 Wire Wire Line
 	5850 2730 5950 2730
-Wire Wire Line
-	7290 4685 7205 4685
-Wire Wire Line
-	7290 4590 7290 4685
-Wire Wire Line
-	6990 4590 6915 4590
-Text GLabel 7205 4685 0    39   Input ~ 0
-SLB
-Text GLabel 6915 4590 0    39   Input ~ 0
-GLB
-$Comp
-L CSD18532NQ5B:CSD18532NQ5B U7
-U 1 1 62877531
-P 6990 4590
-F 0 "U7" V 7820 4390 60  0000 L CNN
-F 1 "CSD18532NQ5B" H 7495 4165 60  0000 L CNN
-F 2 "DNK8" H 7790 4830 60  0001 C CNN
-F 3 "" H 6990 4590 60  0000 C CNN
-	1    6990 4590
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7090 4590 7190 4590
-Wire Wire Line
-	6990 2990 7090 2990
-Connection ~ 6990 2990
-Wire Wire Line
-	7190 2990 7290 2990
-Connection ~ 7190 2990
-Connection ~ 7190 4590
-Wire Wire Line
-	7190 4590 7290 4590
-Connection ~ 7290 4590
-Wire Wire Line
-	8630 4670 8545 4670
-Wire Wire Line
-	8630 4575 8630 4670
-Wire Wire Line
-	8330 4575 8255 4575
-Text GLabel 8545 4670 0    39   Input ~ 0
-SLB
-Text GLabel 8255 4575 0    39   Input ~ 0
-GLB
 $Comp
 L CSD18532NQ5B:CSD18532NQ5B U9
 U 1 1 628C4F21
@@ -1453,12 +1365,6 @@ F 3 "" H 8330 4575 60  0000 C CNN
 	1    8330 4575
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	8430 4575 8530 4575
-Connection ~ 8530 4575
-Wire Wire Line
-	8530 4575 8630 4575
-Connection ~ 8630 4575
 Wire Wire Line
 	8330 2975 8430 2975
 Connection ~ 8330 2975
@@ -1567,7 +1473,7 @@ F 3 "" H 4610 2145 50  0001 C CNN
 	1    4610 2145
 	1    0    0    -1  
 $EndComp
-Text Notes 4280 1100 0    59   ~ 0
+Text Notes 4165 1070 0    59   ~ 0
 3.3V Input Power LED\n
 Wire Notes Line width 10
 	2970 2405 2970 950 
@@ -1734,11 +1640,8 @@ NoConn ~ 900  2735
 NoConn ~ 900  2835
 NoConn ~ 900  2935
 NoConn ~ 900  3035
-NoConn ~ 900  1535
-NoConn ~ 900  1635
 NoConn ~ 2100 1735
 NoConn ~ 2100 1535
-NoConn ~ 2100 3635
 $Comp
 L DS18S20Z_:DS18S20Z+ U?
 U 1 1 615F141B
@@ -1951,98 +1854,399 @@ Wire Wire Line
 Wire Wire Line
 	15760 4685 15760 4595
 Wire Notes Line width 10
-	13770 3255 13770 2015
-Text Notes 1960 4270 0    59   ~ 12
-**Confirm Usage of \nIO 5, 12
-Text GLabel 13565 4230 1    39   Input ~ 0
+	13835 3260 13835 2020
+Text GLabel 12835 4115 1    39   Input ~ 0
 SO1
 $Comp
 L Device:C C?
 U 1 1 61F02A13
-P 13565 4490
-F 0 "C?" H 13575 4565 50  0000 L CNN
-F 1 "2.2nF" H 13575 4400 50  0000 L CNN
-F 2 "" H 13603 4340 50  0001 C CNN
-F 3 "~" H 13565 4490 50  0001 C CNN
-	1    13565 4490
+P 12970 4450
+F 0 "C?" H 12980 4525 50  0000 L CNN
+F 1 "2.2nF" H 12980 4360 50  0000 L CNN
+F 2 "" H 13008 4300 50  0001 C CNN
+F 3 "~" H 12970 4450 50  0001 C CNN
+	1    12970 4450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13565 4230 13565 4340
+	12835 4115 12835 4225
 Wire Wire Line
-	13565 4640 13565 4690
+	12970 4600 12970 4650
 $Comp
 L power:GND #PWR?
 U 1 1 61F2C1DA
-P 13565 4690
-F 0 "#PWR?" H 13565 4440 50  0001 C CNN
-F 1 "GND" V 13565 4500 50  0000 C CNN
-F 2 "" H 13565 4690 50  0001 C CNN
-F 3 "" H 13565 4690 50  0001 C CNN
-	1    13565 4690
+P 12970 4650
+F 0 "#PWR?" H 12970 4400 50  0001 C CNN
+F 1 "GND" V 12970 4460 50  0000 C CNN
+F 2 "" H 12970 4650 50  0001 C CNN
+F 3 "" H 12970 4650 50  0001 C CNN
+	1    12970 4650
 	1    0    0    -1  
 $EndComp
-Text GLabel 13830 4230 1    39   Input ~ 0
+Text GLabel 13415 4120 1    39   Input ~ 0
 SO2
 $Comp
 L Device:C C?
 U 1 1 62076155
-P 13830 4490
-F 0 "C?" H 13840 4565 50  0000 L CNN
-F 1 "2.2nF" H 13840 4400 50  0000 L CNN
-F 2 "" H 13868 4340 50  0001 C CNN
-F 3 "~" H 13830 4490 50  0001 C CNN
-	1    13830 4490
+P 13545 4460
+F 0 "C?" H 13555 4535 50  0000 L CNN
+F 1 "2.2nF" H 13555 4370 50  0000 L CNN
+F 2 "" H 13583 4310 50  0001 C CNN
+F 3 "~" H 13545 4460 50  0001 C CNN
+	1    13545 4460
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13830 4230 13830 4340
+	13415 4120 13415 4230
 Wire Wire Line
-	13830 4640 13830 4690
+	13545 4610 13545 4660
 $Comp
 L power:GND #PWR?
 U 1 1 6207615D
-P 13830 4690
-F 0 "#PWR?" H 13830 4440 50  0001 C CNN
-F 1 "GND" V 13830 4500 50  0000 C CNN
-F 2 "" H 13830 4690 50  0001 C CNN
-F 3 "" H 13830 4690 50  0001 C CNN
-	1    13830 4690
+P 13545 4660
+F 0 "#PWR?" H 13545 4410 50  0001 C CNN
+F 1 "GND" V 13545 4470 50  0000 C CNN
+F 2 "" H 13545 4660 50  0001 C CNN
+F 3 "" H 13545 4660 50  0001 C CNN
+	1    13545 4660
 	1    0    0    -1  
 $EndComp
-Text GLabel 14095 4230 1    39   Input ~ 0
+Text GLabel 13950 4115 1    39   Input ~ 0
 SO3
 $Comp
 L Device:C C?
 U 1 1 62087208
-P 14095 4490
-F 0 "C?" H 14105 4565 50  0000 L CNN
-F 1 "2.2nF" H 14105 4400 50  0000 L CNN
-F 2 "" H 14133 4340 50  0001 C CNN
-F 3 "~" H 14095 4490 50  0001 C CNN
-	1    14095 4490
+P 14085 4460
+F 0 "C?" H 14095 4535 50  0000 L CNN
+F 1 "2.2nF" H 14095 4370 50  0000 L CNN
+F 2 "" H 14123 4310 50  0001 C CNN
+F 3 "~" H 14085 4460 50  0001 C CNN
+	1    14085 4460
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14095 4230 14095 4340
+	13950 4115 13950 4225
 Wire Wire Line
-	14095 4640 14095 4690
+	14085 4610 14085 4660
 $Comp
 L power:GND #PWR?
 U 1 1 62087210
-P 14095 4690
-F 0 "#PWR?" H 14095 4440 50  0001 C CNN
-F 1 "GND" V 14095 4500 50  0000 C CNN
-F 2 "" H 14095 4690 50  0001 C CNN
-F 3 "" H 14095 4690 50  0001 C CNN
-	1    14095 4690
+P 14085 4660
+F 0 "#PWR?" H 14085 4410 50  0001 C CNN
+F 1 "GND" V 14085 4470 50  0000 C CNN
+F 2 "" H 14085 4660 50  0001 C CNN
+F 3 "" H 14085 4660 50  0001 C CNN
+	1    14085 4660
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	12560 3900 13440 3900
-Wire Notes Line
-	13440 3900 13440 5150
+	11665 3895 11665 5145
 Wire Notes Line
 	13445 3900 14320 3900
 NoConn ~ 2100 2235
+Text GLabel 13160 2660 0    39   Input ~ 0
+POWER_IN
+Wire Wire Line
+	13410 2660 13160 2660
+Connection ~ 13410 2660
+Text Notes 9470 4795 0    39   ~ 8
+Operating Voltage for DRV8305 & MOSFETS:\n4.4 to 45 V (PVDD-Drain Voltage)\n
+Text Notes 9475 4970 0    39   ~ 8
+Peak Gate Driver Current:\n1 to 1.25 A
+Text Notes 9505 1470 0    39   ~ 8
+DRV_EN_GATE: Enables \ngate driver & current \nshunt amplifiers\n\nDVDD: 3.3V Internal\nVoltage Regulator\n\nAVDD: 5V Internal\nVoltage Regulator
+Wire Wire Line
+	5750 2965 5850 2965
+Wire Wire Line
+	5665 2965 5750 2965
+Connection ~ 5750 2965
+Wire Wire Line
+	5950 2965 6050 2965
+Wire Wire Line
+	5850 2965 5950 2965
+Connection ~ 5950 2965
+$Comp
+L CSD18532NQ5B:CSD18532NQ5B U5
+U 1 1 6274500E
+P 5750 4565
+F 0 "U5" V 6580 4365 60  0000 L CNN
+F 1 "CSD18532NQ5B" H 6255 4140 60  0000 L CNN
+F 2 "DNK8" H 6550 4805 60  0001 C CNN
+F 3 "" H 5750 4565 60  0000 C CNN
+	1    5750 4565
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5750 4635 5750 4565
+Wire Wire Line
+	5750 4635 5850 4635
+Wire Wire Line
+	5950 4635 5950 4565
+Connection ~ 5750 4635
+Wire Wire Line
+	5850 4565 5850 4635
+Connection ~ 5850 4635
+Wire Wire Line
+	5850 4635 5950 4635
+Wire Wire Line
+	6050 4565 6050 4635
+Wire Wire Line
+	6050 4635 6095 4635
+Wire Wire Line
+	6990 4660 6905 4660
+Text GLabel 6905 4660 0    39   Input ~ 0
+SLB
+Text GLabel 7335 4660 2    39   Input ~ 0
+GLB
+Wire Wire Line
+	6990 4660 6990 4590
+Wire Wire Line
+	6990 4660 7090 4660
+Wire Wire Line
+	7190 4660 7190 4590
+Connection ~ 6990 4660
+Wire Wire Line
+	7090 4590 7090 4660
+Connection ~ 7090 4660
+Wire Wire Line
+	7090 4660 7190 4660
+Wire Wire Line
+	7290 4590 7290 4660
+Wire Wire Line
+	7290 4660 7335 4660
+Wire Wire Line
+	8330 4645 8245 4645
+Text GLabel 8245 4645 0    39   Input ~ 0
+SLC
+Text GLabel 8675 4645 2    39   Input ~ 0
+GLC
+Wire Wire Line
+	8330 4645 8330 4575
+Wire Wire Line
+	8330 4645 8430 4645
+Wire Wire Line
+	8530 4645 8530 4575
+Connection ~ 8330 4645
+Wire Wire Line
+	8430 4575 8430 4645
+Connection ~ 8430 4645
+Wire Wire Line
+	8430 4645 8530 4645
+Wire Wire Line
+	8630 4575 8630 4645
+Wire Wire Line
+	8630 4645 8675 4645
+Wire Wire Line
+	6990 2990 7090 2990
+Wire Wire Line
+	6890 2990 6990 2990
+Connection ~ 6990 2990
+Wire Wire Line
+	7190 2990 7290 2990
+Wire Wire Line
+	7090 2990 7190 2990
+Connection ~ 7190 2990
+$Comp
+L CSD18532NQ5B:CSD18532NQ5B U7
+U 1 1 62877531
+P 6990 4590
+F 0 "U7" V 7820 4390 60  0000 L CNN
+F 1 "CSD18532NQ5B" H 7495 4165 60  0000 L CNN
+F 2 "DNK8" H 7790 4830 60  0001 C CNN
+F 3 "" H 6990 4590 60  0000 C CNN
+	1    6990 4590
+	0    -1   -1   0   
+$EndComp
+Wire Notes Line
+	11665 3900 13440 3900
+Text GLabel 11810 4360 1    39   Input ~ 0
+SP1
+Text GLabel 12090 4360 1    39   Input ~ 0
+SP2
+Wire Wire Line
+	11810 4360 11810 4480
+Wire Wire Line
+	12090 4360 12090 4480
+$Comp
+L Device:R R?
+U 1 1 618F5060
+P 12710 4445
+F 0 "R?" H 12780 4491 50  0000 L CNN
+F 1 "56" H 12780 4400 50  0000 L CNN
+F 2 "" V 12640 4445 50  0001 C CNN
+F 3 "~" H 12710 4445 50  0001 C CNN
+	1    12710 4445
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 618F710E
+P 13290 4460
+F 0 "R?" H 13360 4506 50  0000 L CNN
+F 1 "56" H 13360 4415 50  0000 L CNN
+F 2 "" V 13220 4460 50  0001 C CNN
+F 3 "~" H 13290 4460 50  0001 C CNN
+	1    13290 4460
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61909B63
+P 13825 4460
+F 0 "R?" H 13895 4506 50  0000 L CNN
+F 1 "56" H 13895 4415 50  0000 L CNN
+F 2 "" V 13755 4460 50  0001 C CNN
+F 3 "~" H 13825 4460 50  0001 C CNN
+	1    13825 4460
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12710 4295 12710 4225
+Wire Wire Line
+	12710 4225 12835 4225
+Wire Wire Line
+	12970 4225 12970 4300
+Wire Wire Line
+	13290 4310 13290 4230
+Wire Wire Line
+	13290 4230 13415 4230
+Wire Wire Line
+	13545 4230 13545 4310
+Wire Wire Line
+	13825 4225 13950 4225
+Wire Wire Line
+	14085 4225 14085 4310
+Wire Wire Line
+	13825 4225 13825 4310
+Wire Wire Line
+	12710 4595 12710 4640
+Wire Wire Line
+	13290 4610 13290 4655
+Wire Wire Line
+	13825 4610 13825 4655
+Connection ~ 12835 4225
+Wire Wire Line
+	12835 4225 12970 4225
+Connection ~ 13415 4230
+Wire Wire Line
+	13415 4230 13545 4230
+Connection ~ 13950 4225
+Wire Wire Line
+	13950 4225 14085 4225
+Text GLabel 12710 4640 3    39   Input ~ 0
+ISENA
+Text GLabel 13290 4655 3    39   Input ~ 0
+ISENB
+Text GLabel 13825 4655 3    39   Input ~ 0
+ISENC
+Text GLabel 2290 3635 2    39   Input ~ 0
+ISENA
+Wire Wire Line
+	2290 3635 2100 3635
+Text GLabel 710  1535 0    39   Input ~ 0
+ISENB
+Wire Wire Line
+	710  1535 900  1535
+Text GLabel 710  1635 0    39   Input ~ 0
+ISENC
+Wire Wire Line
+	710  1635 900  1635
+$Comp
+L XT30PW-M:XT30PW-M J?
+U 1 1 6163DE2E
+P 6720 8120
+F 0 "J?" H 7120 8385 50  0000 C CNN
+F 1 "XT30PW-M" H 7120 8294 50  0000 C CNN
+F 2 "XT30PWM" H 7370 8220 50  0001 L CNN
+F 3 "https://www.tme.eu/sl/Document/ce4077e36b79046da520ca73227e15de/XT30PW%20SPEC.pdf" H 7370 8120 50  0001 L CNN
+F 4 "30A Low Temperature Rise Fire Retardant Plug" H 7370 8020 50  0001 L CNN "Description"
+F 5 "5" H 7370 7920 50  0001 L CNN "Height"
+F 6 "Amass" H 7370 7820 50  0001 L CNN "Manufacturer_Name"
+F 7 "XT30PW-M" H 7370 7720 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 7370 7620 50  0001 L CNN "Mouser Part Number"
+F 9 "" H 7370 7520 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 7370 7420 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 7370 7320 50  0001 L CNN "Arrow Price/Stock"
+	1    6720 8120
+	1    0    0    -1  
+$EndComp
+Text Notes 5910 7625 0    157  ~ 31
+LiPo Battery Connector
+$Comp
+L power:GND #PWR?
+U 1 1 616C32F7
+P 11975 4040
+F 0 "#PWR?" H 11975 3790 50  0001 C CNN
+F 1 "GND" V 11980 3912 50  0000 R CNN
+F 2 "" H 11975 4040 50  0001 C CNN
+F 3 "" H 11975 4040 50  0001 C CNN
+	1    11975 4040
+	0    1    1    0   
+$EndComp
+Text GLabel 12180 3950 2    39   Input ~ 0
+SP1
+Wire Wire Line
+	12180 3950 12060 3950
+Text GLabel 12180 4040 2    39   Input ~ 0
+SP2
+Wire Wire Line
+	12180 4040 12060 4040
+Text GLabel 12180 4130 2    39   Input ~ 0
+SP3
+Wire Wire Line
+	12180 4130 12060 4130
+Wire Wire Line
+	12060 4130 12060 4040
+Connection ~ 12060 4040
+Wire Wire Line
+	12060 4040 12060 3950
+Wire Wire Line
+	11975 4040 12060 4040
+Text GLabel 940  4500 2    39   Input ~ 0
+POWER_IN
+Wire Wire Line
+	770  4500 940  4500
+Text GLabel 770  4500 0    39   Input ~ 0
+PVDD
+Wire Notes Line width 10
+	1485 4250 1485 5145
+Text Notes 570  5050 0    39   ~ 0
+PVDD i.e input to the Driver\nand the board
+$Comp
+L power:GND #PWR?
+U 1 1 618A58D3
+P 6510 8120
+F 0 "#PWR?" H 6510 7870 50  0001 C CNN
+F 1 "GND" V 6510 7930 50  0000 C CNN
+F 2 "" H 6510 8120 50  0001 C CNN
+F 3 "" H 6510 8120 50  0001 C CNN
+	1    6510 8120
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6720 8120 6510 8120
+$Comp
+L power:GND #PWR?
+U 1 1 618E84E4
+P 7730 8120
+F 0 "#PWR?" H 7730 7870 50  0001 C CNN
+F 1 "GND" V 7730 7930 50  0000 C CNN
+F 2 "" H 7730 8120 50  0001 C CNN
+F 3 "" H 7730 8120 50  0001 C CNN
+	1    7730 8120
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7520 8120 7635 8120
+Wire Wire Line
+	7520 8220 7635 8220
+Wire Wire Line
+	7635 8220 7635 8120
+Connection ~ 7635 8120
+Wire Wire Line
+	7635 8120 7730 8120
+Wire Wire Line
+	6720 8220 6510 8220
+Text GLabel 6510 8220 0    39   Input ~ 0
+PVDD
 $EndSCHEMATC

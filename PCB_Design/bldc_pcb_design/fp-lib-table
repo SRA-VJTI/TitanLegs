@@ -5,4 +5,5 @@
   (lib (name BSC022N04LS6ATMA1)(type KiCad)(uri ${KIPRJMOD}/component_libraries/BSC022N04LS6ATMA1)(options "")(descr ""))
   (lib (name DRV8305NPHPR)(type KiCad)(uri ${KIPRJMOD}/component_libraries/DRV8305NPHPR)(options "")(descr ""))
   (lib (name DS18S20Z_)(type KiCad)(uri ${KIPRJMOD}/component_libraries/DS18S20Z_)(options "")(descr ""))
+  (lib (name XT30PW-M)(type Legacy)(uri ${KIPRJMOD}/component_libraries/XT30PW-M/XT30PW-M.mod)(options "")(descr ""))
 )
