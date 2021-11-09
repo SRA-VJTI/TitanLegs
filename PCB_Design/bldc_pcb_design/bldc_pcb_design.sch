@@ -2024,25 +2024,6 @@ Text GLabel 710  1635 0    39   Input ~ 0
 ISENC
 Wire Wire Line
 	710  1635 900  1635
-$Comp
-L XT30PW-M:XT30PW-M J2
-U 1 1 6163DE2E
-P 10780 8445
-F 0 "J2" H 11180 8710 50  0000 C CNN
-F 1 "XT30PW-M" H 11180 8619 50  0000 C CNN
-F 2 "XT30PW-M:XT30PWM" H 11430 8545 50  0001 L CNN
-F 3 "https://www.tme.eu/sl/Document/ce4077e36b79046da520ca73227e15de/XT30PW%20SPEC.pdf" H 11430 8445 50  0001 L CNN
-F 4 "30A Low Temperature Rise Fire Retardant Plug" H 11430 8345 50  0001 L CNN "Description"
-F 5 "5" H 11430 8245 50  0001 L CNN "Height"
-F 6 "Amass" H 11430 8145 50  0001 L CNN "Manufacturer_Name"
-F 7 "XT30PW-M" H 11430 8045 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 11430 7945 50  0001 L CNN "Mouser Part Number"
-F 9 "" H 11430 7845 50  0001 L CNN "Mouser Price/Stock"
-F 10 "" H 11430 7745 50  0001 L CNN "Arrow Part Number"
-F 11 "" H 11430 7645 50  0001 L CNN "Arrow Price/Stock"
-	1    10780 8445
-	1    0    0    -1  
-$EndComp
 Text Notes 9940 7725 0    157  ~ 31
 LiPo Battery Connector
 $Comp
@@ -2085,43 +2066,6 @@ Wire Notes Line width 10
 	1485 4250 1485 5145
 Text Notes 570  5050 0    39   ~ 0
 PVDD i.e input to the Driver\nand the board
-$Comp
-L power:GND #PWR024
-U 1 1 618A58D3
-P 10570 8445
-F 0 "#PWR024" H 10570 8195 50  0001 C CNN
-F 1 "GND" V 10570 8255 50  0000 C CNN
-F 2 "" H 10570 8445 50  0001 C CNN
-F 3 "" H 10570 8445 50  0001 C CNN
-	1    10570 8445
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	10780 8445 10570 8445
-$Comp
-L power:GND #PWR025
-U 1 1 618E84E4
-P 11790 8445
-F 0 "#PWR025" H 11790 8195 50  0001 C CNN
-F 1 "GND" V 11790 8255 50  0000 C CNN
-F 2 "" H 11790 8445 50  0001 C CNN
-F 3 "" H 11790 8445 50  0001 C CNN
-	1    11790 8445
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	11580 8445 11695 8445
-Wire Wire Line
-	11580 8545 11695 8545
-Wire Wire Line
-	11695 8545 11695 8445
-Connection ~ 11695 8445
-Wire Wire Line
-	11695 8445 11790 8445
-Wire Wire Line
-	10780 8545 10570 8545
-Text GLabel 10570 8545 0    39   Input ~ 0
-PVDD
 Text GLabel 13160 2660 0    39   Input ~ 0
 3V3_IN
 Wire Notes Line width 20
@@ -2329,4 +2273,34 @@ Text Notes 6000 5475 0    157  ~ 31
 Additional Circuitry
 Text Notes 3130 2640 0    118  ~ 24
 Boot Reset Switches
+Wire Wire Line
+	11545 8255 11545 8430
+Text GLabel 11545 8430 3    39   Input ~ 0
+GND
+$Comp
+L Mechanical:MountingHole_Pad H5
+U 1 1 61833E09
+P 11545 8155
+F 0 "H5" H 11645 8204 50  0000 L CNN
+F 1 "MountingHole_Pad" H 11645 8113 50  0000 L CNN
+F 2 "MountingHole:MountingHole_6mm" H 11545 8155 50  0001 C CNN
+F 3 "~" H 11545 8155 50  0001 C CNN
+	1    11545 8155
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10665 8255 10665 8430
+Text GLabel 10665 8430 3    39   Input ~ 0
+PVDD
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 61833E01
+P 10665 8155
+F 0 "H4" H 10765 8204 50  0000 L CNN
+F 1 "MountingHole_Pad" H 10765 8113 50  0000 L CNN
+F 2 "MountingHole:MountingHole_6mm" H 10665 8155 50  0001 C CNN
+F 3 "~" H 10665 8155 50  0001 C CNN
+	1    10665 8155
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
