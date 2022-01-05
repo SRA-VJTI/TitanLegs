@@ -9,4 +9,6 @@
   (lib (name 8D43_Inductor)(type KiCad)(uri ${KIPRJMOD}/component_libraries/8D43_Inductor)(options "")(descr ""))
   (lib (name SS34_Diode)(type KiCad)(uri ${KIPRJMOD}/component_libraries/SS34_Diode)(options "")(descr ""))
   (lib (name Tactile_Switch)(type KiCad)(uri ${KIPRJMOD}/component_libraries/Tactile_Switch)(options "")(descr ""))
+  (lib (name Shunt_Resistor)(type KiCad)(uri ${KIPRJMOD}/component_libraries/Shunt_Resistor/shunt_resistor.pretty)(options "")(descr ""))
+  (lib (name Logos)(type KiCad)(uri ${KIPRJMOD}/component_libraries/Logos.pretty)(options "")(descr ""))
 )
