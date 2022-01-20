@@ -11,4 +11,5 @@
   (lib (name Tactile_Switch)(type KiCad)(uri ${KIPRJMOD}/component_libraries/Tactile_Switch)(options "")(descr ""))
   (lib (name Shunt_Resistor)(type KiCad)(uri ${KIPRJMOD}/component_libraries/Shunt_Resistor/shunt_resistor.pretty)(options "")(descr ""))
   (lib (name Logos)(type KiCad)(uri ${KIPRJMOD}/component_libraries/Logos.pretty)(options "")(descr ""))
+  (lib (name BC847)(type KiCad)(uri ${KIPRJMOD}/component_libraries/BC847)(options "")(descr ""))
 )
