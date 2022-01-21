@@ -89,6 +89,3 @@ fp-info-cache
 
 # Local History for Visual Studio Code
 .history/
-
-/Firmware/components/esp-idf-drv8305
-/Firmware/components/esp-idf-drv8305/*
