@@ -7,9 +7,6 @@
 #include "driver/i2c.h"
 #include "esp_log.h"
 
-#define CHECK(x) do { esp_err_t __; if ((__ = x) != ESP_OK) return __; } while (0)
-#define CHECK_ARG(VAL) do { if (!(VAL)) return ESP_FAIL_INVALID_ARG; } while (0)
-
 #define SDA_GPIO 21
 #define SCL_GPIO 22
 #define I2C_PORT I2C_NUM_0
@@ -39,7 +36,7 @@
 
 // Configuration Register
 typedef enum {
-    NOM = 0,  
+    NOM =  0,  
     LPM1 = 1,
     LPM2 = 2,
     LPM3 = 3
@@ -100,12 +97,34 @@ typedef struct
 }as5600_config_t;
 
 
-esp_err_t config_ams5600(as5600_config_t config);
 
-esp_err_t detect_magnet();
 
-esp_err_t get_magnitude(uint16_t *magnitude);
 
+
+
+
+//////
+  esp_err_t config_ams5600(as5600_config_t config);
+  esp_err_t set_max_angle(uint16_t new_max_angle);
+  esp_err_t get_max_angle(uint16_t *max_angle);
+
+  esp_err_t set_start_position(uint16_t start_position);
+  esp_err_t get_start_position(uint16_t *start_position);
+
+  esp_err_t set_end_position(uint16_t end_angle);
+  esp_err_t get_end_position(uint16_t *end_position);
+
+  esp_err_t get_raw_angle(uint16_t *raw_angle);
+  esp_err_t get_scaled_angle(uint16_t *scaled_angle);
+
+  esp_err_t detect_magnet();
+
+  esp_err_t get_agc(uint8_t *agc);
+  esp_err_t get_magnitude(uint16_t *magnitude);
+  esp_err_t get_conf(as5600_config_t *config);
+
+  esp_err_t get_burn_count(uint8_t *count);
+////////
 
 // inline void init_AMS_5600(as5600_config &cfg) {}
 // /* mode = 0, output PWM, mode = 1 output analog (full range from 0% to 100%
