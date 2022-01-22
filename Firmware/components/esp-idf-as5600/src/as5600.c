@@ -214,7 +214,7 @@ esp_err_t get_conf(as5600_config_t *config)
   config->threshold = ((high & 0x1c)) >> 2;
   config->wd = ((high & 0x20)) >> 5;
 
-  return ret & ret1
+  return ret & ret1;
 }
 
 esp_err_t get_burn_count(uint8_t *count)
