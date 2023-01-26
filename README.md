@@ -2,6 +2,7 @@
 
 ## Schematics
 <img src="./PCB_Design/renders/schematics.png">
+
 ## PCB Design
 ### Front Side
 <img src="./PCB_Design/renders/front.png">
